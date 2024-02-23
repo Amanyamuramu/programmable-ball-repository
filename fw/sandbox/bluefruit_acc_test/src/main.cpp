@@ -21,6 +21,7 @@ void setup()
   pinMode(BUTTON_PIN,INPUT_PULLUP);
   Wire.begin();
   ble.init();
+  accInit();
 }
 
 void loop()
@@ -41,7 +42,10 @@ void loop()
       ble.write("0");
     }
   }
+
   float rms_difference = accDiff();
+  Serial.println(rms_difference);
+  delay(10);
   if(abs(rms_difference)>=1.3){
     unsigned long currentMillis = millis();
     if(currentMillis - previousMillis >= 300){
@@ -72,6 +76,10 @@ void accInit(){
   acc.getIMU();                          // IMUからデータを取得
   float *imu_data = acc.getData();       // 取得したデータへのポインタを取得
   prev_rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2))/3);
+  for (int i = 0; i < 13; i++)
+  {
+    Serial.print(imu_data[i]);Serial.print(", ");
+  }
 }
 
 float accDiff(){
