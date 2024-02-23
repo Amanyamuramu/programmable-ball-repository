@@ -9,8 +9,6 @@ Acc::Acc()
 
 void Acc::setup()
 {
-    Serial.begin(115200);
-    Wire.begin();
     if (imu.begin(LSM9DS1_AG, LSM9DS1_M, Wire) == false)
     {
         Serial.println("Failed to communicate with LSM9DS1.");
@@ -52,7 +50,7 @@ void Acc::getIMU()
     imu_9dof[10] = atan2(imu.ay, imu.az) * 180.0 / PI;
     imu_9dof[11] = atan2(-imu.ax, sqrt(imu.ay * imu.ay + imu.az * imu.az)) * 180.0 / PI;
     imu_9dof[12] = atan2(imu.mx, imu.my) * 180.0 / PI;
-    imu_9dof[13] = sqrt(pow(imu_9dof[0], 2) + pow(imu_9dof[1], 2) + pow(imu_9dof[2]-1.03, 2));
+    imu_9dof[13] = sqrt((pow(imu_9dof[0], 2) + pow(imu_9dof[1], 2) + pow(imu_9dof[2]-1.03, 2))/3);
 }
 
 float *Acc::getData()
