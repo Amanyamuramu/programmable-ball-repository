@@ -11,10 +11,10 @@ BleHelper ble;
 Acc acc;
 Filters filter;
 
-
 float prev_rms = 0;
 unsigned long previousMillis = 0;
 bool isButton = false;
+float prev_acc_data[3] = {0};
 
 bool checkButtonRelease(const int pin);
 void accInit();
@@ -24,9 +24,11 @@ void setup()
 {
   Serial.begin(115200);
   pinMode(BUTTON_PIN,INPUT_PULLUP);
+
+  ble.init(); //BLEの初期化
+
   Wire.begin();
-  ble.init();
-  accInit();
+  accInit(); //加速度センサの初期化
 }
 
 void loop()
@@ -44,16 +46,16 @@ void loop()
     }
   }
 
-  float rms_difference = accDiff();
-  Serial.println(rms_difference);
+  float rms = accDiff();
+  // Serial.println(rms);
 
-  if(abs(rms_difference)>=1.3){
+  if(rms>=1.0){
     unsigned long currentMillis = millis();
-    if(currentMillis - previousMillis >= 300){
+    if(currentMillis - previousMillis >= 150){
       ble.write("0");
       ble.write("1");
       previousMillis = millis();
-      // Serial.println("send signal for play mp3");
+      Serial.println("send signal for play mp3");
     }
   }
 }
@@ -76,13 +78,13 @@ void accInit(){
   acc.setup();                           // IMUのセットアップ
   acc.getIMU();                          // IMUからデータを取得
   float *imu_data = acc.getData();       // 取得したデータへのポインタを取得
-  prev_rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2))/3);
-  for (int i = 0; i < 3; i++)
-  {
+  for(uint8_t i = 0; i < 3; i++){
+    prev_acc_data[i] = imu_data[i];
     Serial.print(imu_data[i]);Serial.print(", ");
   }
+  prev_rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2))/3);
 }
-
+/*
 float accDiff(){
   acc.getIMU(); 
   float *imu_data = acc.getData();
@@ -95,4 +97,25 @@ float accDiff(){
   prev_rms = rms;
   //閾値は1.3
   return diff_rms;
+}
+*/
+float accDiff(){
+  acc.getIMU(); 
+  float *imu_data = acc.getData();
+  float lpf[3] = {0};
+  float hpf[3] = {0};
+  for (uint8_t i = 0; i < 3; i++){
+    lpf[i] = filter.applyLowPassFilter(imu_data[i],prev_acc_data[i]);
+    prev_acc_data[i] = imu_data[i];
+    hpf[i] = filter.applyHighPassFilter(imu_data[i],lpf[i]);
+    // Serial.print(hpf[i]);Serial.print(", ");
+  }
+  /*
+  float rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2))/3);
+  float diff_rms = rms - prev_rms;
+  prev_rms = rms;
+  //閾値は1.3
+  */
+  float rms = sqrt((pow(hpf[0], 2) + pow(hpf[1], 2) + pow(hpf[2], 2))/3);
+  return rms;
 }
