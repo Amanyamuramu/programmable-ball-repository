@@ -1,12 +1,17 @@
 #include <Arduino.h>
 #include <Adafruit_TinyUSB.h>
+
 #include "BLEHelper.h"
 #include "acc_rms_i2c.hpp"
+#include "Filters.h"
 
 #define BUTTON_PIN PIN_BUTTON1
 
 BleHelper ble;
 Acc acc;
+Filters filter;
+
+
 float prev_rms = 0;
 unsigned long previousMillis = 0;
 bool isButton = false;
@@ -26,33 +31,29 @@ void setup()
 
 void loop()
 {
-  /*
-  unsigned long currentMillis = millis();
-  if (currentMillis - previousMillis > 1000){
-  }
-  */
   static int counter = 0; 
   if (checkButtonRelease(BUTTON_PIN)) {
     counter++;
-    ble.write("playMusic");
     if(counter%2==0){
       ble.write("1");
+      Serial.println("playCommand");
     }
     else{
       ble.write("0");
+      Serial.println("stopCommand");
     }
   }
 
   float rms_difference = accDiff();
   Serial.println(rms_difference);
-  delay(10);
+
   if(abs(rms_difference)>=1.3){
     unsigned long currentMillis = millis();
     if(currentMillis - previousMillis >= 300){
       ble.write("0");
       ble.write("1");
       previousMillis = millis();
-      Serial.println("send signal for play mp3");
+      // Serial.println("send signal for play mp3");
     }
   }
 }
@@ -72,11 +73,11 @@ bool checkButtonRelease(const int pin) {
 }
 
 void accInit(){
-  acc.setup(); // IMUのセットアップ
+  acc.setup();                           // IMUのセットアップ
   acc.getIMU();                          // IMUからデータを取得
   float *imu_data = acc.getData();       // 取得したデータへのポインタを取得
   prev_rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2))/3);
-  for (int i = 0; i < 13; i++)
+  for (int i = 0; i < 3; i++)
   {
     Serial.print(imu_data[i]);Serial.print(", ");
   }
@@ -86,6 +87,10 @@ float accDiff(){
   acc.getIMU(); 
   float *imu_data = acc.getData();
   float rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2))/3);
+  for (int i = 0; i < 3; i++)
+  {
+    Serial.print(imu_data[i]);Serial.print(", ");
+  }
   float diff_rms = rms - prev_rms;
   prev_rms = rms;
   //閾値は1.3
