@@ -116,6 +116,7 @@ float accDiff(){
   prev_rms = rms;
   //閾値は1.3
   */
+ 
   float rms = sqrt((pow(hpf[0], 2) + pow(hpf[1], 2) + pow(hpf[2], 2))/3);
   return rms;
 }
