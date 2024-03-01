@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -73,12 +73,106 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="30.51" y2="0" width="0" layer="20"/>
+<wire x1="30.51" y1="0" x2="30.51" y2="30.77" width="0" layer="20"/>
+<wire x1="30.51" y1="30.77" x2="0" y2="30.77" width="0" layer="20"/>
+<wire x1="0" y1="30.77" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="0" x2="0" y2="30" x3="-6" y3="15" textsize="1.778" layer="47"/>
+<dimension x1="0" y1="0" x2="30" y2="0" x3="15" y3="-6" textsize="1.778" layer="47"/>
 </plain>
 <libraries>
+<library name="MDBT50Q-1MV2">
+<packages>
+<package name="XCVR_MDBT50Q-1MV2">
+<rectangle x1="-2.3" y1="2.75" x2="-0.7" y2="3.95" layer="41"/>
+<rectangle x1="-6.2" y1="3.95" x2="6.2" y2="7.75" layer="41"/>
+<wire x1="-5.25" y1="7.75" x2="5.25" y2="7.75" width="0.127" layer="51"/>
+<wire x1="5.25" y1="7.75" x2="5.25" y2="-7.75" width="0.127" layer="51"/>
+<wire x1="5.25" y1="-7.75" x2="-5.25" y2="-7.75" width="0.127" layer="51"/>
+<wire x1="-5.25" y1="-7.75" x2="-5.25" y2="7.75" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="3.95" x2="-6.2" y2="3.95" width="0.05" layer="39"/>
+<wire x1="-6.2" y1="3.95" x2="-6.2" y2="8" width="0.05" layer="39"/>
+<wire x1="-6.2" y1="8" x2="6.2" y2="8" width="0.05" layer="39"/>
+<wire x1="6.2" y1="8" x2="6.2" y2="3.95" width="0.05" layer="39"/>
+<wire x1="6.2" y1="3.95" x2="5.5" y2="3.95" width="0.05" layer="39"/>
+<wire x1="5.5" y1="3.95" x2="5.5" y2="-8" width="0.05" layer="39"/>
+<wire x1="5.5" y1="-8" x2="-5.5" y2="-8" width="0.05" layer="39"/>
+<wire x1="-5.5" y1="-8" x2="-5.5" y2="3.95" width="0.05" layer="39"/>
+<text x="-5.25" y="8.19" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.35" y="-9.45" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5.25" y1="4.25" x2="-5.25" y2="7.75" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="7.75" x2="5.25" y2="7.75" width="0.127" layer="21"/>
+<wire x1="5.25" y1="7.75" x2="5.25" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-5.25" y1="-4.2" x2="-5.25" y2="-6.55" width="0.127" layer="21"/>
+<circle x="-5.75" y="3.75" radius="0.1" width="0.2" layer="21"/>
+<circle x="-5.75" y="3.75" radius="0.1" width="0.2" layer="51"/>
+<rectangle x1="-6.2" y1="3.95" x2="6.2" y2="7.75" layer="43"/>
+<rectangle x1="-2.3" y1="2.75" x2="-0.7" y2="3.95" layer="43"/>
+<rectangle x1="-6.2" y1="3.95" x2="6.2" y2="7.75" layer="42"/>
+<smd name="1" x="-4.65" y="3.75" dx="0.6" dy="0.4" layer="1"/>
+<smd name="2" x="-4.65" y="2.65" dx="0.6" dy="0.4" layer="1"/>
+<smd name="3" x="-4.65" y="1.85" dx="0.6" dy="0.4" layer="1"/>
+<smd name="4" x="-4.65" y="0.25" dx="0.6" dy="0.4" layer="1"/>
+<smd name="5" x="-3.75" y="-0.15" dx="0.6" dy="0.4" layer="1"/>
+<smd name="6" x="-4.65" y="-0.55" dx="0.6" dy="0.4" layer="1"/>
+<smd name="7" x="-3.75" y="-0.95" dx="0.6" dy="0.4" layer="1"/>
+<smd name="8" x="-4.65" y="-1.35" dx="0.6" dy="0.4" layer="1"/>
+<smd name="9" x="-3.75" y="-1.75" dx="0.6" dy="0.4" layer="1"/>
+<smd name="10" x="-4.65" y="-2.15" dx="0.6" dy="0.4" layer="1"/>
+<smd name="11" x="-3.75" y="-2.55" dx="0.6" dy="0.4" layer="1"/>
+<smd name="12" x="-4.65" y="-2.95" dx="0.6" dy="0.4" layer="1"/>
+<smd name="13" x="-3.75" y="-3.35" dx="0.6" dy="0.4" layer="1"/>
+<smd name="14" x="-4.65" y="-3.75" dx="0.6" dy="0.4" layer="1"/>
+<smd name="15" x="-4.8" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="16" x="-4" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="17" x="-3.2" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="18" x="-2.4" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="19" x="-2" y="-6.25" dx="0.4" dy="0.6" layer="1"/>
+<smd name="20" x="-1.6" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="21" x="-1.2" y="-6.25" dx="0.4" dy="0.6" layer="1"/>
+<smd name="22" x="-0.8" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="23" x="-0.4" y="-6.25" dx="0.4" dy="0.6" layer="1"/>
+<smd name="24" x="0" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="25" x="0.4" y="-6.25" dx="0.4" dy="0.6" layer="1"/>
+<smd name="26" x="0.8" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="27" x="1.2" y="-6.25" dx="0.4" dy="0.6" layer="1"/>
+<smd name="28" x="1.6" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="29" x="2" y="-6.25" dx="0.4" dy="0.6" layer="1"/>
+<smd name="30" x="2.4" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="31" x="3.2" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="32" x="4" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="33" x="4.8" y="-7.15" dx="0.4" dy="0.6" layer="1"/>
+<smd name="34" x="4.65" y="-6.15" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="35" x="4.65" y="-5.35" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="36" x="3.75" y="-4.95" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="37" x="4.65" y="-4.55" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="38" x="3.75" y="-4.15" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="39" x="4.65" y="-3.75" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="40" x="3.75" y="-3.35" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="41" x="4.65" y="-2.95" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="42" x="3.75" y="-2.55" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="43" x="3.75" y="-1.75" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="44" x="4.65" y="-1.35" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="45" x="3.75" y="-0.95" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="46" x="4.65" y="-0.55" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="47" x="3.75" y="-0.15" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="48" x="4.65" y="0.25" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="49" x="3.75" y="0.65" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="50" x="3.75" y="1.45" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="51" x="4.65" y="1.85" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="52" x="3.75" y="2.25" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="53" x="4.65" y="2.65" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="54" x="3.75" y="3.05" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="55" x="4.65" y="3.75" dx="0.6" dy="0.4" layer="1" rot="R180"/>
+<smd name="56" x="-2" y="-0.55" dx="0.4" dy="0.6" layer="1"/>
+<smd name="57" x="-1.2" y="-0.55" dx="0.4" dy="0.6" layer="1"/>
+<smd name="58" x="-0.4" y="-0.55" dx="0.4" dy="0.6" layer="1"/>
+<smd name="59" x="0.4" y="-0.55" dx="0.4" dy="0.6" layer="1"/>
+<smd name="60" x="1.2" y="-0.55" dx="0.4" dy="0.6" layer="1"/>
+<smd name="61" x="2" y="-0.55" dx="0.4" dy="0.6" layer="1"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -272,8 +366,43 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
+<element name="U1" library="MDBT50Q-1MV2" package="XCVR_MDBT50Q-1MV2" value="MDBT50Q-1MV2" x="15.13" y="22.32" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="15.13" y="22.32" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/MDBT50Q-1MV2/Raytac+Corporation/view-part/?ref=eda" x="15.13" y="22.32" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" 802.15.4, Bluetooth Bluetooth v5.2, Zigbee® Transceiver Module 2.36GHz ~ 2.5GHz Integrated, Chip Surface Mount " x="15.13" y="22.32" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Raytac Corporation" x="15.13" y="22.32" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="MDBT50Q-1MV2" x="15.13" y="22.32" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.88" y="24.51" size="1.27" layer="25"/>
+<attribute name="PACKAGE" value="SMD-61 Raytac Corporation" x="15.13" y="22.32" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="15.13" y="22.32" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/MDBT50Q-1MV2/Raytac+Corporation/view-part/?ref=snap" x="15.13" y="22.32" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="8.51" y="12.87" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
+<signal name="GND">
+<contactref element="U1" pad="33"/>
+<contactref element="U1" pad="1"/>
+<contactref element="U1" pad="2"/>
+<contactref element="U1" pad="15"/>
+<contactref element="U1" pad="55"/>
+<wire x1="10.48" y1="26.07" x2="19.78" y2="26.07" width="0" layer="19" extent="1-1"/>
+<wire x1="10.48" y1="24.97" x2="10.48" y2="26.07" width="0" layer="19" extent="1-1"/>
+<wire x1="10.33" y1="15.17" x2="10.48" y2="24.97" width="0" layer="19" extent="1-1"/>
+<wire x1="19.93" y1="15.17" x2="10.33" y2="15.17" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VDDH">
+<contactref element="U1" pad="30"/>
+</signal>
+<signal name="VBUS">
+<contactref element="U1" pad="32"/>
+</signal>
+<signal name="DCCH">
+<contactref element="U1" pad="31"/>
+</signal>
+<signal name="VDD">
+<contactref element="U1" pad="28"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
