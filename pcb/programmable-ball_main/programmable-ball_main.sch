@@ -502,9 +502,9 @@ Please use FRAME-LEDGER/FRAME-LETTER for schematics now.</description>
 <attribute name="LAST_DATE_TIME" x="309.753" y="9.525" size="2.286" layer="94" font="vector"/>
 <attribute name="SHEET" x="368.3" y="4.445" size="2.54" layer="94" font="vector"/>
 </instance>
-<instance part="U1" gate="G$1" x="226.06" y="190.5" smashed="yes">
-<attribute name="NAME" x="203.2" y="236.982" size="1.778" layer="95"/>
-<attribute name="VALUE" x="200.66" y="139.7" size="1.778" layer="96"/>
+<instance part="U1" gate="G$1" x="246.38" y="187.96" smashed="yes">
+<attribute name="NAME" x="223.52" y="234.442" size="1.778" layer="95"/>
+<attribute name="VALUE" x="223.52" y="139.7" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
