@@ -11,3 +11,5 @@ pcb/Programmable-ball_lib
 *.b$?
 *.s$?
 *.l$?
+
+.vscode/
