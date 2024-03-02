@@ -1,6 +1,7 @@
+# Ignore Directory
 fw/sandbox/VibrationCheck/
 pcb/Programmable-ball_lib
-
+pcb/ref
 
 # Ignore list for Eagle, a PCB layout tool
 
