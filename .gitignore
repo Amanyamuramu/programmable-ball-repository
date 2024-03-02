@@ -13,4 +13,8 @@ pcb/ref
 *.s$?
 *.l$?
 
+# Autorouter files
+*.pro
+*.job
+
 .vscode/
