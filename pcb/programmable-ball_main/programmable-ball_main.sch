@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -464,223 +478,340 @@ Please use FRAME-LEDGER/FRAME-LETTER for schematics now.</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="USB4125-GF-A_REVA2">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="GCT_USB4125-GF-A_REVA2">
-<wire x1="-4.62" y1="3.3" x2="-4.32" y2="3.6" width="0" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="3.6" x2="-4.02" y2="3.3" width="0" layer="46" curve="-90"/>
-<wire x1="-4.02" y1="3.3" x2="-4.02" y2="2.7" width="0" layer="46"/>
-<wire x1="-4.02" y1="2.7" x2="-4.32" y2="2.4" width="0" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="2.4" x2="-4.62" y2="2.7" width="0" layer="46" curve="-90"/>
-<wire x1="-4.62" y1="2.7" x2="-4.62" y2="3.3" width="0" layer="46"/>
-<wire x1="4.02" y1="3.3" x2="4.32" y2="3.6" width="0" layer="46" curve="-90"/>
-<wire x1="4.32" y1="3.6" x2="4.62" y2="3.3" width="0" layer="46" curve="-90"/>
-<wire x1="4.62" y1="3.3" x2="4.62" y2="2.7" width="0" layer="46"/>
-<wire x1="4.62" y1="2.7" x2="4.32" y2="2.4" width="0" layer="46" curve="-90"/>
-<wire x1="4.32" y1="2.4" x2="4.02" y2="2.7" width="0" layer="46" curve="-90"/>
-<wire x1="4.02" y1="2.7" x2="4.02" y2="3.3" width="0" layer="46"/>
-<wire x1="-4.62" y1="-0.5" x2="-4.32" y2="-0.2" width="0" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="-0.2" x2="-4.02" y2="-0.5" width="0" layer="46" curve="-90"/>
-<wire x1="-4.02" y1="-0.5" x2="-4.02" y2="-1.1" width="0" layer="46"/>
-<wire x1="-4.02" y1="-1.1" x2="-4.32" y2="-1.4" width="0" layer="46" curve="-90"/>
-<wire x1="-4.32" y1="-1.4" x2="-4.62" y2="-1.1" width="0" layer="46" curve="-90"/>
-<wire x1="-4.62" y1="-1.1" x2="-4.62" y2="-0.5" width="0" layer="46"/>
-<wire x1="4.02" y1="-0.5" x2="4.32" y2="-0.2" width="0" layer="46" curve="-90"/>
-<wire x1="4.32" y1="-0.2" x2="4.62" y2="-0.5" width="0" layer="46" curve="-90"/>
-<wire x1="4.62" y1="-0.5" x2="4.62" y2="-1.1" width="0" layer="46"/>
-<wire x1="4.62" y1="-1.1" x2="4.32" y2="-1.4" width="0" layer="46" curve="-90"/>
-<wire x1="4.32" y1="-1.4" x2="4.02" y2="-1.1" width="0" layer="46" curve="-90"/>
-<wire x1="4.02" y1="-1.1" x2="4.02" y2="-0.5" width="0" layer="46"/>
-<wire x1="-4.47" y1="3.4" x2="4.47" y2="3.4" width="0.1" layer="51"/>
-<wire x1="4.47" y1="3.4" x2="4.47" y2="-3.4" width="0.1" layer="51"/>
-<wire x1="4.47" y1="-3.4" x2="-4.47" y2="-3.4" width="0.1" layer="51"/>
-<wire x1="-4.47" y1="-3.4" x2="-4.47" y2="3.4" width="0.1" layer="51"/>
-<wire x1="-4.47" y1="-2.25" x2="-4.47" y2="-3.4" width="0.2" layer="21"/>
-<wire x1="-4.47" y1="-3.4" x2="4.47" y2="-3.4" width="0.2" layer="21"/>
-<wire x1="4.47" y1="-3.4" x2="4.47" y2="-2.25" width="0.2" layer="21"/>
-<wire x1="-5.15" y1="4.35" x2="5.15" y2="4.35" width="0.05" layer="39"/>
-<wire x1="5.15" y1="4.35" x2="5.15" y2="-3.65" width="0.05" layer="39"/>
-<wire x1="5.15" y1="-3.65" x2="-5.15" y2="-3.65" width="0.05" layer="39"/>
-<wire x1="-5.15" y1="-3.65" x2="-5.15" y2="4.35" width="0.05" layer="39"/>
-<text x="-3.3" y="4.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.3" y="-3.8" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<polygon width="0.01" layer="16">
-<vertex x="-4.32" y="0.05" curve="90"/>
-<vertex x="-4.87" y="-0.5"/>
-<vertex x="-4.87" y="-1.1" curve="90"/>
-<vertex x="-4.32" y="-1.65" curve="90"/>
-<vertex x="-3.77" y="-1.1"/>
-<vertex x="-3.77" y="-0.5" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="1">
-<vertex x="-4.32" y="0.05" curve="90"/>
-<vertex x="-4.87" y="-0.5"/>
-<vertex x="-4.87" y="-1.1" curve="90"/>
-<vertex x="-4.32" y="-1.65" curve="90"/>
-<vertex x="-3.77" y="-1.1"/>
-<vertex x="-3.77" y="-0.5" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="-4.32" y="0.15" curve="90"/>
-<vertex x="-4.97" y="-0.5"/>
-<vertex x="-4.97" y="-1.1" curve="90"/>
-<vertex x="-4.32" y="-1.75" curve="90"/>
-<vertex x="-3.67" y="-1.1"/>
-<vertex x="-3.67" y="-0.5" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-4.32" y="0.15" curve="90"/>
-<vertex x="-4.97" y="-0.5"/>
-<vertex x="-4.97" y="-1.1" curve="90"/>
-<vertex x="-4.32" y="-1.75" curve="90"/>
-<vertex x="-3.67" y="-1.1"/>
-<vertex x="-3.67" y="-0.5" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="16">
-<vertex x="4.32" y="0.05" curve="90"/>
-<vertex x="3.77" y="-0.5"/>
-<vertex x="3.77" y="-1.1" curve="90"/>
-<vertex x="4.32" y="-1.65" curve="90"/>
-<vertex x="4.87" y="-1.1"/>
-<vertex x="4.87" y="-0.5" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="1">
-<vertex x="4.32" y="0.05" curve="90"/>
-<vertex x="3.77" y="-0.5"/>
-<vertex x="3.77" y="-1.1" curve="90"/>
-<vertex x="4.32" y="-1.65" curve="90"/>
-<vertex x="4.87" y="-1.1"/>
-<vertex x="4.87" y="-0.5" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="4.32" y="0.15" curve="90"/>
-<vertex x="3.67" y="-0.5"/>
-<vertex x="3.67" y="-1.1" curve="90"/>
-<vertex x="4.32" y="-1.75" curve="90"/>
-<vertex x="4.97" y="-1.1"/>
-<vertex x="4.97" y="-0.5" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="4.32" y="0.15" curve="90"/>
-<vertex x="3.67" y="-0.5"/>
-<vertex x="3.67" y="-1.1" curve="90"/>
-<vertex x="4.32" y="-1.75" curve="90"/>
-<vertex x="4.97" y="-1.1"/>
-<vertex x="4.97" y="-0.5" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="16">
-<vertex x="-4.32" y="3.85" curve="90"/>
-<vertex x="-4.87" y="3.3"/>
-<vertex x="-4.87" y="2.7" curve="90"/>
-<vertex x="-4.32" y="2.15" curve="90"/>
-<vertex x="-3.77" y="2.7"/>
-<vertex x="-3.77" y="3.3" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="1">
-<vertex x="-4.32" y="3.85" curve="90"/>
-<vertex x="-4.87" y="3.3"/>
-<vertex x="-4.87" y="2.7" curve="90"/>
-<vertex x="-4.32" y="2.15" curve="90"/>
-<vertex x="-3.77" y="2.7"/>
-<vertex x="-3.77" y="3.3" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="-4.32" y="3.95" curve="90"/>
-<vertex x="-4.97" y="3.3"/>
-<vertex x="-4.97" y="2.7" curve="90"/>
-<vertex x="-4.32" y="2.05" curve="90"/>
-<vertex x="-3.67" y="2.7"/>
-<vertex x="-3.67" y="3.3" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-4.32" y="3.95" curve="90"/>
-<vertex x="-4.97" y="3.3"/>
-<vertex x="-4.97" y="2.7" curve="90"/>
-<vertex x="-4.32" y="2.05" curve="90"/>
-<vertex x="-3.67" y="2.7"/>
-<vertex x="-3.67" y="3.3" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="16">
-<vertex x="4.32" y="3.85" curve="90"/>
-<vertex x="3.77" y="3.3"/>
-<vertex x="3.77" y="2.7" curve="90"/>
-<vertex x="4.32" y="2.15" curve="90"/>
-<vertex x="4.87" y="2.7"/>
-<vertex x="4.87" y="3.3" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="1">
-<vertex x="4.32" y="3.85" curve="90"/>
-<vertex x="3.77" y="3.3"/>
-<vertex x="3.77" y="2.7" curve="90"/>
-<vertex x="4.32" y="2.15" curve="90"/>
-<vertex x="4.87" y="2.7"/>
-<vertex x="4.87" y="3.3" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="4.32" y="3.95" curve="90"/>
-<vertex x="3.67" y="3.3"/>
-<vertex x="3.67" y="2.7" curve="90"/>
-<vertex x="4.32" y="2.05" curve="90"/>
-<vertex x="4.97" y="2.7"/>
-<vertex x="4.97" y="3.3" curve="90"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="4.32" y="3.95" curve="90"/>
-<vertex x="3.67" y="3.3"/>
-<vertex x="3.67" y="2.7" curve="90"/>
-<vertex x="4.32" y="2.05" curve="90"/>
-<vertex x="4.97" y="2.7"/>
-<vertex x="4.97" y="3.3" curve="90"/>
-</polygon>
-<smd name="B12" x="-2.75" y="3.08" dx="0.8" dy="1.2" layer="1"/>
-<smd name="A12" x="2.75" y="3.08" dx="0.8" dy="1.2" layer="1"/>
-<smd name="B9" x="-1.52" y="3.08" dx="0.76" dy="1.2" layer="1"/>
-<smd name="A9" x="1.52" y="3.08" dx="0.76" dy="1.2" layer="1"/>
-<smd name="A5" x="-0.5" y="3.08" dx="0.7" dy="1.2" layer="1"/>
-<smd name="B5" x="0.5" y="3.08" dx="0.7" dy="1.2" layer="1"/>
-<pad name="S1" x="-4.32" y="3" drill="0.6" diameter="0.8" shape="long" rot="R90" stop="no"/>
-<pad name="S2" x="4.32" y="3" drill="0.6" diameter="0.8" shape="long" rot="R90" stop="no"/>
-<pad name="S3" x="-4.32" y="-0.8" drill="0.6" diameter="0.8" shape="long" rot="R90" stop="no"/>
-<pad name="S4" x="4.32" y="-0.8" drill="0.6" diameter="0.8" shape="long" rot="R90" stop="no"/>
-</package>
 </packages>
 <symbols>
-<symbol name="USB4125-GF-A_REVA2">
-<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<text x="-7.62" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-13.462" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
-<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
-<pin name="VBUS" x="-12.7" y="7.62" length="middle" direction="pwr"/>
-<pin name="CC1" x="-12.7" y="2.54" length="middle"/>
-<pin name="SHIELD" x="-12.7" y="-10.16" length="middle" direction="pas"/>
-<pin name="CC2" x="-12.7" y="0" length="middle"/>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="USB4125-GF-A_REVA2" prefix="J">
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="USB4125-GF-A_REVA2" x="0" y="0"/>
+<gate name="1" symbol="GND" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="GCT_USB4125-GF-A_REVA2">
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="USB4056-03-A_REVA2">
+<packages>
+<package name="GCT_USB4056-03-A_REVA2">
+<circle x="-2.8" y="8" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-4.925" y1="-1.55" x2="4.925" y2="-1.55" width="0.2" layer="21"/>
+<wire x1="-4.925" y1="-2.53" x2="-4.925" y2="7.34" width="0.1" layer="51"/>
+<wire x1="4.925" y1="-2.53" x2="4.925" y2="7.34" width="0.1" layer="51"/>
+<wire x1="-4.925" y1="7.34" x2="4.925" y2="7.34" width="0.1" layer="51"/>
+<wire x1="-4.925" y1="-2.53" x2="4.925" y2="-2.53" width="0.1" layer="51"/>
+<wire x1="-5.175" y1="-2.78" x2="-5.175" y2="7.59" width="0.05" layer="39"/>
+<wire x1="-5.175" y1="-2.78" x2="5.175" y2="-2.78" width="0.05" layer="39"/>
+<wire x1="-5.175" y1="7.59" x2="5.175" y2="7.59" width="0.05" layer="39"/>
+<wire x1="5.175" y1="-2.78" x2="5.175" y2="7.59" width="0.05" layer="39"/>
+<text x="5.5" y="-1.3" size="0.8128" layer="51" ratio="15" rot="SR0">PCB Edge</text>
+<text x="-5" y="10" size="1.27" layer="25" ratio="13" rot="SR0">&gt;NAME</text>
+<text x="-5" y="8.5" size="1.27" layer="27" ratio="13" rot="SR0">&gt;VALUE</text>
+<wire x1="3.75" y1="5.965" x2="4.075" y2="5.64" width="0" layer="46" curve="-90"/>
+<wire x1="4.075" y1="5.64" x2="3.75" y2="5.315" width="0" layer="46" curve="-90"/>
+<wire x1="3.75" y1="5.315" x2="3.45" y2="5.315" width="0" layer="46"/>
+<wire x1="3.45" y1="5.315" x2="3.125" y2="5.64" width="0" layer="46" curve="-90"/>
+<wire x1="3.125" y1="5.64" x2="3.45" y2="5.965" width="0" layer="46" curve="-90"/>
+<wire x1="3.45" y1="5.965" x2="3.75" y2="5.965" width="0" layer="46"/>
+<wire x1="4.38" y1="4.7" x2="4.13" y2="4.95" width="0" layer="46" curve="90"/>
+<wire x1="4.13" y1="4.95" x2="3.88" y2="4.7" width="0" layer="46" curve="90"/>
+<wire x1="3.88" y1="4.7" x2="3.88" y2="4.1" width="0" layer="46"/>
+<wire x1="3.88" y1="4.1" x2="4.13" y2="3.85" width="0" layer="46" curve="90"/>
+<wire x1="4.13" y1="3.85" x2="4.38" y2="4.1" width="0" layer="46" curve="90"/>
+<wire x1="4.38" y1="4.1" x2="4.38" y2="4.7" width="0" layer="46"/>
+<wire x1="-3.88" y1="4.7" x2="-4.13" y2="4.95" width="0" layer="46" curve="90"/>
+<wire x1="-4.13" y1="4.95" x2="-4.38" y2="4.7" width="0" layer="46" curve="90"/>
+<wire x1="-4.38" y1="4.7" x2="-4.38" y2="4.1" width="0" layer="46"/>
+<wire x1="-4.38" y1="4.1" x2="-4.13" y2="3.85" width="0" layer="46" curve="90"/>
+<wire x1="-4.13" y1="3.85" x2="-3.88" y2="4.1" width="0" layer="46" curve="90"/>
+<wire x1="-3.88" y1="4.1" x2="-3.88" y2="4.7" width="0" layer="46"/>
+<wire x1="4.74" y1="0.3" x2="4.49" y2="0.55" width="0" layer="46" curve="90"/>
+<wire x1="4.49" y1="0.55" x2="4.24" y2="0.3" width="0" layer="46" curve="90"/>
+<wire x1="4.24" y1="0.3" x2="4.24" y2="-0.3" width="0" layer="46"/>
+<wire x1="4.24" y1="-0.3" x2="4.49" y2="-0.55" width="0" layer="46" curve="90"/>
+<wire x1="4.49" y1="-0.55" x2="4.74" y2="-0.3" width="0" layer="46" curve="90"/>
+<wire x1="4.74" y1="-0.3" x2="4.74" y2="0.3" width="0" layer="46"/>
+<wire x1="-4.24" y1="0.3" x2="-4.49" y2="0.55" width="0" layer="46" curve="90"/>
+<wire x1="-4.49" y1="0.55" x2="-4.74" y2="0.3" width="0" layer="46" curve="90"/>
+<wire x1="-4.74" y1="0.3" x2="-4.74" y2="-0.3" width="0" layer="46"/>
+<wire x1="-4.74" y1="-0.3" x2="-4.49" y2="-0.55" width="0" layer="46" curve="90"/>
+<wire x1="-4.49" y1="-0.55" x2="-4.24" y2="-0.3" width="0" layer="46" curve="90"/>
+<wire x1="-4.24" y1="-0.3" x2="-4.24" y2="0.3" width="0" layer="46"/>
+<circle x="-2.8" y="8" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-4.925" y1="7.34" x2="-4.925" y2="1.15" width="0.2" layer="21"/>
+<wire x1="4.925" y1="1.15" x2="4.925" y2="7.34" width="0.2" layer="21"/>
+<wire x1="-6" y1="-1.55" x2="6" y2="-1.55" width="0.1" layer="51"/>
+<wire x1="-4.925" y1="7.34" x2="4.925" y2="7.34" width="0.2" layer="21"/>
+<wire x1="-4.925" y1="-1.55" x2="-4.925" y2="-1.15" width="0.2" layer="21"/>
+<wire x1="4.925" y1="-1.55" x2="4.925" y2="-1.15" width="0.2" layer="21"/>
+<polygon width="0.01" layer="1">
+<vertex x="-4.49" y="0.7" curve="90"/>
+<vertex x="-4.89" y="0.3"/>
+<vertex x="-4.89" y="-0.3" curve="90"/>
+<vertex x="-4.49" y="-0.7" curve="90"/>
+<vertex x="-4.09" y="-0.3"/>
+<vertex x="-4.09" y="0.3" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="16">
+<vertex x="-4.49" y="0.7" curve="90"/>
+<vertex x="-4.89" y="0.3"/>
+<vertex x="-4.89" y="-0.3" curve="90"/>
+<vertex x="-4.49" y="-0.7" curve="90"/>
+<vertex x="-4.09" y="-0.3"/>
+<vertex x="-4.09" y="0.3" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="-4.49" y="0.8" curve="90"/>
+<vertex x="-4.99" y="0.3"/>
+<vertex x="-4.99" y="-0.3" curve="90"/>
+<vertex x="-4.49" y="-0.8" curve="90"/>
+<vertex x="-3.99" y="-0.3"/>
+<vertex x="-3.99" y="0.3" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="30">
+<vertex x="-4.49" y="0.8" curve="90"/>
+<vertex x="-4.99" y="0.3"/>
+<vertex x="-4.99" y="-0.3" curve="90"/>
+<vertex x="-4.49" y="-0.8" curve="90"/>
+<vertex x="-3.99" y="-0.3"/>
+<vertex x="-3.99" y="0.3" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="1">
+<vertex x="4.49" y="0.7" curve="90"/>
+<vertex x="4.09" y="0.3"/>
+<vertex x="4.09" y="-0.3" curve="90"/>
+<vertex x="4.49" y="-0.7" curve="90"/>
+<vertex x="4.89" y="-0.3"/>
+<vertex x="4.89" y="0.3" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="16">
+<vertex x="4.49" y="0.7" curve="90"/>
+<vertex x="4.09" y="0.3"/>
+<vertex x="4.09" y="-0.3" curve="90"/>
+<vertex x="4.49" y="-0.7" curve="90"/>
+<vertex x="4.89" y="-0.3"/>
+<vertex x="4.89" y="0.3" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="4.49" y="0.8" curve="90"/>
+<vertex x="3.99" y="0.3"/>
+<vertex x="3.99" y="-0.3" curve="90"/>
+<vertex x="4.49" y="-0.8" curve="90"/>
+<vertex x="4.99" y="-0.3"/>
+<vertex x="4.99" y="0.3" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="30">
+<vertex x="4.49" y="0.8" curve="90"/>
+<vertex x="3.99" y="0.3"/>
+<vertex x="3.99" y="-0.3" curve="90"/>
+<vertex x="4.49" y="-0.8" curve="90"/>
+<vertex x="4.99" y="-0.3"/>
+<vertex x="4.99" y="0.3" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="1">
+<vertex x="-4.13" y="5.1" curve="90"/>
+<vertex x="-4.53" y="4.7"/>
+<vertex x="-4.53" y="4.1" curve="90"/>
+<vertex x="-4.13" y="3.7" curve="90"/>
+<vertex x="-3.73" y="4.1"/>
+<vertex x="-3.73" y="4.7" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="16">
+<vertex x="-4.13" y="5.1" curve="90"/>
+<vertex x="-4.53" y="4.7"/>
+<vertex x="-4.53" y="4.1" curve="90"/>
+<vertex x="-4.13" y="3.7" curve="90"/>
+<vertex x="-3.73" y="4.1"/>
+<vertex x="-3.73" y="4.7" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="-4.13" y="5.2" curve="90"/>
+<vertex x="-4.63" y="4.7"/>
+<vertex x="-4.63" y="4.1" curve="90"/>
+<vertex x="-4.13" y="3.6" curve="90"/>
+<vertex x="-3.63" y="4.1"/>
+<vertex x="-3.63" y="4.7" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="30">
+<vertex x="-4.13" y="5.2" curve="90"/>
+<vertex x="-4.63" y="4.7"/>
+<vertex x="-4.63" y="4.1" curve="90"/>
+<vertex x="-4.13" y="3.6" curve="90"/>
+<vertex x="-3.63" y="4.1"/>
+<vertex x="-3.63" y="4.7" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="1">
+<vertex x="4.13" y="5.1" curve="90"/>
+<vertex x="3.73" y="4.7"/>
+<vertex x="3.73" y="4.1" curve="90"/>
+<vertex x="4.13" y="3.7" curve="90"/>
+<vertex x="4.53" y="4.1"/>
+<vertex x="4.53" y="4.7" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="16">
+<vertex x="4.13" y="5.1" curve="90"/>
+<vertex x="3.73" y="4.7"/>
+<vertex x="3.73" y="4.1" curve="90"/>
+<vertex x="4.13" y="3.7" curve="90"/>
+<vertex x="4.53" y="4.1"/>
+<vertex x="4.53" y="4.7" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="4.13" y="5.2" curve="90"/>
+<vertex x="3.63" y="4.7"/>
+<vertex x="3.63" y="4.1" curve="90"/>
+<vertex x="4.13" y="3.6" curve="90"/>
+<vertex x="4.63" y="4.1"/>
+<vertex x="4.63" y="4.7" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="30">
+<vertex x="4.13" y="5.2" curve="90"/>
+<vertex x="3.63" y="4.7"/>
+<vertex x="3.63" y="4.1" curve="90"/>
+<vertex x="4.13" y="3.6" curve="90"/>
+<vertex x="4.63" y="4.1"/>
+<vertex x="4.63" y="4.7" curve="90"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="3.025" y="5.64" curve="-90"/>
+<vertex x="3.45" y="6.065"/>
+<vertex x="3.75" y="6.065" curve="-90"/>
+<vertex x="4.175" y="5.64" curve="-90"/>
+<vertex x="3.75" y="5.215"/>
+<vertex x="3.45" y="5.215" curve="-90"/>
+</polygon>
+<polygon width="0.01" layer="30">
+<vertex x="3.025" y="5.64" curve="-90"/>
+<vertex x="3.45" y="6.065"/>
+<vertex x="3.75" y="6.065" curve="-90"/>
+<vertex x="4.175" y="5.64" curve="-90"/>
+<vertex x="3.75" y="5.215"/>
+<vertex x="3.45" y="5.215" curve="-90"/>
+</polygon>
+<smd name="A1" x="-2.75" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A2" x="-2.25" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A3" x="-1.75" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A4" x="-1.25" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A5" x="-0.75" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A6" x="-0.25" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A7" x="0.25" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A8" x="0.75" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A9" x="1.25" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A10" x="1.75" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A11" x="2.25" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<smd name="A12" x="2.75" y="6.2" dx="0.3" dy="0.9" layer="1"/>
+<pad name="B1" x="2.8" y="4.99" drill="0.4" diameter="0.6"/>
+<pad name="B2" x="2.4" y="4.29" drill="0.4" diameter="0.6"/>
+<pad name="B3" x="1.6" y="4.29" drill="0.4" diameter="0.6"/>
+<pad name="B4" x="1.2" y="4.99" drill="0.4" diameter="0.6"/>
+<pad name="B5" x="0.8" y="4.29" drill="0.4" diameter="0.6"/>
+<pad name="B6" x="0.4" y="4.99" drill="0.4" diameter="0.6"/>
+<pad name="B7" x="-0.4" y="4.99" drill="0.4" diameter="0.6"/>
+<pad name="B8" x="-0.8" y="4.29" drill="0.4" diameter="0.6"/>
+<pad name="B9" x="-1.2" y="4.99" drill="0.4" diameter="0.6"/>
+<pad name="B10" x="-1.6" y="4.29" drill="0.4" diameter="0.6"/>
+<pad name="B11" x="-2.4" y="4.29" drill="0.25" diameter="0.4064"/>
+<pad name="B12" x="-2.8" y="4.99" drill="0.4" diameter="0.6"/>
+<hole x="3.6" y="5.64" drill="0.65"/>
+<hole x="-3.6" y="5.64" drill="0.65"/>
+<pad name="S1" x="-4.13" y="4.4" drill="0.5" diameter="0.8" stop="no"/>
+<pad name="S2" x="4.13" y="4.4" drill="0.5" diameter="0.8" stop="no"/>
+<pad name="S3" x="-4.49" y="0" drill="0.5" diameter="0.8" stop="no"/>
+<pad name="S4" x="4.49" y="0" drill="0.5" diameter="0.8" stop="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="USB4056-03-A_REVA2">
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<text x="-12.7" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-18.542" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
+<pin name="GND_A" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
+<pin name="SSTXN1" x="-17.78" y="7.62" length="middle"/>
+<pin name="SSTXP1" x="-17.78" y="10.16" length="middle"/>
+<pin name="VBUS_A" x="-17.78" y="12.7" length="middle" direction="pwr"/>
+<pin name="DP1" x="-17.78" y="2.54" length="middle"/>
+<pin name="CC1" x="-17.78" y="5.08" length="middle"/>
+<pin name="SBU1" x="-17.78" y="-2.54" length="middle"/>
+<pin name="DN1" x="-17.78" y="0" length="middle"/>
+<pin name="SSRXN2" x="-17.78" y="-5.08" length="middle"/>
+<pin name="SSRXP2" x="-17.78" y="-7.62" length="middle"/>
+<pin name="SHELL_GND" x="17.78" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND_B" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="SSTXN2" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="SSTXP2" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="VBUS_B" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="DP2" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="CC2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SBU2" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="DN2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SSRXN1" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="SSRXP1" x="17.78" y="10.16" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB4056-03-A_REVA2" prefix="J">
+<description> &lt;a href="https://pricing.snapeda.com/parts/USB4056-03-A/Global%20Connector%20Technology/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="USB4056-03-A_REVA2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GCT_USB4056-03-A_REVA2">
 <connects>
 <connect gate="G$1" pin="CC1" pad="A5"/>
 <connect gate="G$1" pin="CC2" pad="B5"/>
-<connect gate="G$1" pin="GND" pad="A12 B12"/>
-<connect gate="G$1" pin="SHIELD" pad="S1 S2 S3 S4"/>
-<connect gate="G$1" pin="VBUS" pad="A9 B9"/>
+<connect gate="G$1" pin="DN1" pad="A7"/>
+<connect gate="G$1" pin="DN2" pad="B7"/>
+<connect gate="G$1" pin="DP1" pad="A6"/>
+<connect gate="G$1" pin="DP2" pad="B6"/>
+<connect gate="G$1" pin="GND_A" pad="A1 A12"/>
+<connect gate="G$1" pin="GND_B" pad="B1 B12"/>
+<connect gate="G$1" pin="SBU1" pad="A8"/>
+<connect gate="G$1" pin="SBU2" pad="B8"/>
+<connect gate="G$1" pin="SHELL_GND" pad="S1 S2 S3 S4"/>
+<connect gate="G$1" pin="SSRXN1" pad="B10"/>
+<connect gate="G$1" pin="SSRXN2" pad="A10"/>
+<connect gate="G$1" pin="SSRXP1" pad="B11"/>
+<connect gate="G$1" pin="SSRXP2" pad="A11"/>
+<connect gate="G$1" pin="SSTXN1" pad="A3"/>
+<connect gate="G$1" pin="SSTXN2" pad="B3"/>
+<connect gate="G$1" pin="SSTXP1" pad="A2"/>
+<connect gate="G$1" pin="SSTXP2" pad="B2"/>
+<connect gate="G$1" pin="VBUS_A" pad="A4 A9"/>
+<connect gate="G$1" pin="VBUS_B" pad="B4 B9"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value=" USB Charge Only Connector Type C Horizontal Receptacle, 3.16mm profile, 6 Pins, Surface mount, Top mount, low cost "/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="2073-USB4125-GF-ATR-ND"/>
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/USB4056-03-A/Global+Connector+Technology/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value=" USB-C (USB TYPE-C) USB 3.2 Gen 2 (USB 3.1 Gen 2, Superspeed + (USB 3.1)) Receptacle Connector 24 Position Surface Mount, Right Angle; Through Hole "/>
 <attribute name="MF" value="Global Connector Technology"/>
-<attribute name="MP" value="USB4125-GF-A"/>
+<attribute name="MP" value="USB4056-03-A"/>
 <attribute name="PACKAGE" value="None"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/USB4125-GF-A/?ref=eda"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/USB4056-03-A/Global+Connector+Technology/view-part/?ref=snap"/>
 </technology>
 </technologies>
 </device>
@@ -700,26 +831,36 @@ Please use FRAME-LEDGER/FRAME-LETTER for schematics now.</description>
 <parts>
 <part name="FRAME1" library="SparkFun-Retired" deviceset="FRAME-A3" device=""/>
 <part name="U1" library="MDBT50Q-1MV2" deviceset="MDBT50Q-1MV2" device=""/>
-<part name="J1" library="USB4125-GF-A_REVA2" deviceset="USB4125-GF-A_REVA2" device=""/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J1" library="USB4056-03-A_REVA2" deviceset="USB4056-03-A_REVA2" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<wire x1="365.76" y1="43.18" x2="182.88" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="182.88" y1="43.18" x2="182.88" y2="246.38" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="182.88" y1="246.38" x2="365.76" y2="246.38" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="365.76" y1="43.18" x2="165.1" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="165.1" y1="43.18" x2="165.1" y2="246.38" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="165.1" y1="246.38" x2="365.76" y2="246.38" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="365.76" y1="246.38" x2="365.76" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
-<text x="182.88" y="35.56" size="3.81" layer="97">nRF52840</text>
+<text x="167.64" y="35.56" size="3.81" layer="97">nRF52840</text>
 <wire x1="25.4" y1="185.42" x2="109.22" y2="185.42" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="109.22" y1="185.42" x2="109.22" y2="132.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="109.22" y1="132.08" x2="25.4" y2="132.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="25.4" y1="132.08" x2="25.4" y2="185.42" width="0.1524" layer="97" style="shortdash"/>
 <text x="63.5" y="157.48" size="1.778" layer="97">電源系</text>
-<wire x1="271.78" y1="104.14" x2="335.28" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="335.28" y1="104.14" x2="335.28" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="335.28" y1="55.88" x2="271.78" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="271.78" y1="55.88" x2="271.78" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
-<text x="271.78" y="50.8" size="1.778" layer="97">USB TypeC</text>
+<wire x1="304.8" y1="104.14" x2="355.6" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="355.6" y1="104.14" x2="355.6" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="355.6" y1="55.88" x2="304.8" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="304.8" y1="55.88" x2="304.8" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<text x="309.88" y="53.34" size="1.778" layer="97">USB TypeC</text>
+<text x="304.8" y="106.68" size="1.778" layer="97">fixme : typc-c usbd+も出せるようにして</text>
+<wire x1="223.52" y1="104.14" x2="294.64" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="294.64" y1="104.14" x2="294.64" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="294.64" y1="55.88" x2="223.52" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="223.52" y1="55.88" x2="223.52" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<text x="248.92" y="53.34" size="1.778" layer="97">USB TypeC</text>
+<text x="243.84" y="106.68" size="1.778" layer="97">fixme : typc-c usbd+も出せるようにして</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -731,17 +872,109 @@ Please use FRAME-LEDGER/FRAME-LETTER for schematics now.</description>
 <attribute name="NAME" x="223.52" y="234.442" size="1.778" layer="95"/>
 <attribute name="VALUE" x="223.52" y="139.7" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="314.96" y="78.74" smashed="yes">
-<attribute name="NAME" x="307.34" y="89.662" size="1.778" layer="95"/>
-<attribute name="VALUE" x="307.34" y="65.278" size="1.778" layer="96" rot="MR180"/>
+<instance part="GND1" gate="1" x="276.86" y="137.16" smashed="yes">
+<attribute name="VALUE" x="274.32" y="134.62" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="340.36" y="63.5" smashed="yes">
+<attribute name="VALUE" x="337.82" y="60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="279.4" y="63.5" smashed="yes">
+<attribute name="VALUE" x="276.86" y="60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="J1" gate="G$1" x="248.92" y="83.82" smashed="yes">
+<attribute name="NAME" x="236.22" y="99.822" size="1.778" layer="95"/>
+<attribute name="VALUE" x="236.22" y="65.278" size="1.778" layer="96" rot="MR180"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="274.32" y1="144.78" x2="276.86" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="144.78" x2="276.86" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="330.2" y1="76.2" x2="340.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="76.2" x2="340.36" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="269.24" y1="76.2" x2="279.4" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="76.2" x2="279.4" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VBUS" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VBUS"/>
+<wire x1="274.32" y1="223.52" x2="281.94" y2="223.52" width="0.1524" layer="91"/>
+<label x="281.94" y="223.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USBD+" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="D+"/>
+<wire x1="274.32" y1="205.74" x2="281.94" y2="205.74" width="0.1524" layer="91"/>
+<label x="281.94" y="205.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USBD-" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="D-"/>
+<wire x1="274.32" y1="203.2" x2="281.94" y2="203.2" width="0.1524" layer="91"/>
+<label x="281.94" y="203.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="330.2" y1="88.9" x2="340.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="88.9" x2="340.36" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<wire x1="330.2" y1="83.82" x2="340.36" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<wire x1="330.2" y1="81.28" x2="340.36" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<wire x1="269.24" y1="88.9" x2="279.4" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="88.9" x2="279.4" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<wire x1="269.24" y1="83.82" x2="279.4" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<wire x1="269.24" y1="81.28" x2="279.4" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
