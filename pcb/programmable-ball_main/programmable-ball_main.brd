@@ -854,15 +854,15 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="MDBT50Q-1MV2" package="XCVR_MDBT50Q-1MV2" value="MDBT50Q-1MV2" x="15" y="20.5" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="15" y="20.5" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/MDBT50Q-1MV2/Raytac+Corporation/view-part/?ref=eda" x="15" y="20.5" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" 802.15.4, Bluetooth Bluetooth v5.2, Zigbee® Transceiver Module 2.36GHz ~ 2.5GHz Integrated, Chip Surface Mount " x="15" y="20.5" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Raytac Corporation" x="15" y="20.5" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="MDBT50Q-1MV2" x="15" y="20.5" size="1.778" layer="27" display="off"/>
-<attribute name="PACKAGE" value="SMD-61 Raytac Corporation" x="15" y="20.5" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="15" y="20.5" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/MDBT50Q-1MV2/Raytac+Corporation/view-part/?ref=snap" x="15" y="20.5" size="1.778" layer="27" display="off"/>
+<element name="U1" library="MDBT50Q-1MV2" package="XCVR_MDBT50Q-1MV2" value="MDBT50Q-1MV2" x="15" y="20.9" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="15" y="20.9" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/MDBT50Q-1MV2/Raytac+Corporation/view-part/?ref=eda" x="15" y="20.9" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" 802.15.4, Bluetooth Bluetooth v5.2, Zigbee® Transceiver Module 2.36GHz ~ 2.5GHz Integrated, Chip Surface Mount " x="15" y="20.9" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Raytac Corporation" x="15" y="20.9" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="MDBT50Q-1MV2" x="15" y="20.9" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="SMD-61 Raytac Corporation" x="15" y="20.9" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="15" y="20.9" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/MDBT50Q-1MV2/Raytac+Corporation/view-part/?ref=snap" x="15" y="20.9" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J1" library="12402012E212A" package="AMPHENOL_12402012E212A" value="12402012E212A" x="15" y="3.2" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="15" y="3.2" size="1.778" layer="27" display="off"/>
@@ -883,7 +883,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="10.3" y="9.062" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-14340" x="11.3" y="10.2" size="1.778" layer="27" display="off"/>
 </element>
-<element name="S1" library="SparkFun-Retired" package="TACTILE_SWITCH_SMD-3" value="SWITCH-MOMENTARY-SPSTSMD-3" x="23" y="9" smashed="yes"/>
+<element name="S1" library="SparkFun-Retired" package="TACTILE_SWITCH_SMD-3" value="SWITCH-MOMENTARY-SPSTSMD-3" x="23" y="7" smashed="yes"/>
 <element name="P1" library="S2B-ZR-SM4A-TF" package="JST_S2B-ZR-SM4A-TF" value="S2B-ZR-SM4A-TF" x="7" y="15" smashed="yes" rot="R90">
 <attribute name="AVAILABILITY" value="In Stock" x="7" y="15" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/S2B-ZR-SM4A-TF/JST+Sales+America+Inc./view-part/?ref=eda" x="7" y="15" size="1.778" layer="27" rot="R90" display="off"/>
@@ -894,39 +894,39 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="None" x="7" y="15" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/S2B-ZR-SM4A-TF/JST+Sales+America+Inc./view-part/?ref=snap" x="7" y="15" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U2" library="AP2112K-3.3TRG1" package="SOT95P285X140-5N" value="AP2112K-3.3TRG1" x="23.3" y="13" smashed="yes">
-<attribute name="MANUFACTURER" value="Diodes Inc." x="23.3" y="13" size="1.778" layer="27" display="off"/>
-<attribute name="PARTREV" value="2-2" x="23.3" y="13" size="1.778" layer="27" display="off"/>
+<element name="U2" library="AP2112K-3.3TRG1" package="SOT95P285X140-5N" value="AP2112K-3.3TRG1" x="22.6" y="10.5" smashed="yes">
+<attribute name="MANUFACTURER" value="Diodes Inc." x="22.6" y="10.5" size="1.778" layer="27" display="off"/>
+<attribute name="PARTREV" value="2-2" x="22.6" y="10.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="Y1" library="FC-135_32.7680KA-A0" package="XTAL_FC-135_32.7680KA-A0" value="FC-135_32.7680KA-A0" x="22.9" y="20.1" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/FC-135%2032.7680KA-A0/EPSON/view-part/?ref=eda" x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" 32.768 kHz ±20ppm Crystal 12.5pF 70 kOhms 2-SMD, No Lead " x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="EPSON" x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="FC-135 32.7680KA-A0" x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="22.16443125" y="21.56241875" size="0.7" layer="25"/>
-<attribute name="PACKAGE" value="SMD-2 Epson" x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=51409&amp;manufacturer=EPSON&amp;part_name=FC-135 32.7680KA-A0&amp;search_term=None" x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/FC-135%2032.7680KA-A0/EPSON/view-part/?ref=snap" x="22.9" y="20.1" size="1.778" layer="27" display="off"/>
+<element name="Y1" library="FC-135_32.7680KA-A0" package="XTAL_FC-135_32.7680KA-A0" value="FC-135_32.7680KA-A0" x="23.8" y="15.6" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/FC-135%2032.7680KA-A0/EPSON/view-part/?ref=eda" x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" 32.768 kHz ±20ppm Crystal 12.5pF 70 kOhms 2-SMD, No Lead " x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="EPSON" x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="FC-135 32.7680KA-A0" x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.06443125" y="17.06241875" size="0.7" layer="25"/>
+<attribute name="PACKAGE" value="SMD-2 Epson" x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=51409&amp;manufacturer=EPSON&amp;part_name=FC-135 32.7680KA-A0&amp;search_term=None" x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/FC-135%2032.7680KA-A0/EPSON/view-part/?ref=snap" x="23.8" y="15.6" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C1" library="SparkFun-Capacitors" package="0402-TIGHT" value="9.1pF" x="21.9" y="18.2" smashed="yes">
-<attribute name="MOUSER_PART" value="609-500R07S9R1CV4T" x="21.9" y="18.2" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21.4" y="17.062" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-15278" x="21.9" y="18.2" size="1.778" layer="27" display="off"/>
+<element name="C1" library="SparkFun-Capacitors" package="0402-TIGHT" value="9.1pF" x="21.8" y="13.7" smashed="yes">
+<attribute name="MOUSER_PART" value="609-500R07S9R1CV4T" x="21.8" y="13.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="21.3" y="12.562" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-15278" x="21.8" y="13.7" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="0402-TIGHT" value="9.1pF" x="23" y="17.3" smashed="yes" rot="R180">
-<attribute name="MOUSER_PART" value="609-500R07S9R1CV4T" x="23" y="17.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="23.5" y="16.738" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-15278" x="23" y="17.3" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C2" library="SparkFun-Capacitors" package="0402-TIGHT" value="9.1pF" x="23.8" y="13.7" smashed="yes" rot="R180">
+<attribute name="MOUSER_PART" value="609-500R07S9R1CV4T" x="23.8" y="13.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.3" y="13.138" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-15278" x="23.8" y="13.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R3" library="SparkFun-Resistors" package="0402-TIGHT" value="47k" x="26.3" y="11.9" smashed="yes" rot="R90">
-<attribute name="NAME" x="27.438" y="11.9" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-15011" x="26.3" y="11.9" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R3" library="SparkFun-Resistors" package="0402-TIGHT" value="47k" x="25.3" y="9.9" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.438" y="9.9" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-15011" x="25.3" y="9.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="L1" library="SparkFun-Coils" package="0805" value="DNP" x="26.7" y="14.4" smashed="yes" rot="R90">
-<attribute name="PROD_ID" value="NDUC-13231" x="26.7" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="27.589" y="14.4" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="L1" library="SparkFun-Coils" package="0805" value="DNP" x="25.7" y="12.4" smashed="yes" rot="R90">
+<attribute name="PROD_ID" value="NDUC-13231" x="25.7" y="12.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="26.589" y="12.4" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="L2" library="SparkFun-Coils" package="0805" value="10μH" x="13.3" y="10.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.889" y="10.7" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
@@ -979,22 +979,22 @@ design rules under a new name.</description>
 <contactref element="L2" pad="2"/>
 <contactref element="R5" pad="1"/>
 <contactref element="C3" pad="1"/>
-<wire x1="22.4" y1="18.2" x2="19.65" y2="24.25" width="0" layer="19" extent="1-1"/>
-<wire x1="22.5" y1="17.3" x2="22.4" y2="18.2" width="0" layer="19" extent="1-1"/>
-<wire x1="22.115" y1="13" x2="22.5" y2="17.3" width="0" layer="19" extent="1-1"/>
-<wire x1="19.8" y1="13.35" x2="22.115" y2="13" width="0" layer="19" extent="1-1"/>
-<wire x1="21.2" y1="10.1" x2="22.115" y2="13" width="0" layer="19" extent="1-1"/>
-<wire x1="18.2" y1="7.95" x2="21.2" y2="10.1" width="0" layer="19" extent="1-1"/>
-<wire x1="16.5" y1="9.4" x2="18.2" y2="7.95" width="0" layer="19" extent="1-1"/>
-<wire x1="15.5" y1="9.4" x2="16.5" y2="9.4" width="0" layer="19" extent="1-1"/>
-<wire x1="13.3" y1="9.8" x2="15.5" y2="9.4" width="0" layer="19" extent="1-1"/>
-<wire x1="11.8" y1="7.95" x2="13.3" y2="9.8" width="0" layer="19" extent="1-1"/>
-<wire x1="9.8" y1="10.2" x2="11.8" y2="7.95" width="0" layer="19" extent="1-1"/>
-<wire x1="9.2" y1="11.2" x2="9.8" y2="10.2" width="0" layer="19" extent="1-1"/>
-<wire x1="10.2" y1="13.35" x2="9.2" y2="11.2" width="0" layer="19" extent="1-1"/>
-<wire x1="7" y1="14.25" x2="10.2" y2="13.35" width="0" layer="19" extent="1-1"/>
-<wire x1="10.35" y1="24.25" x2="19.65" y2="24.25" width="0" layer="19" extent="1-1"/>
-<wire x1="10.35" y1="23.15" x2="10.35" y2="24.25" width="0" layer="19" extent="1-1"/>
+<wire x1="10.35" y1="24.65" x2="19.65" y2="24.65" width="0" layer="19" extent="1-1"/>
+<wire x1="10.35" y1="23.55" x2="10.35" y2="24.65" width="0" layer="19" extent="1-1"/>
+<wire x1="7" y1="14.25" x2="10.35" y2="23.55" width="0" layer="19" extent="1-1"/>
+<wire x1="10.2" y1="13.75" x2="7" y2="14.25" width="0" layer="19" extent="1-1"/>
+<wire x1="9.2" y1="11.2" x2="10.2" y2="13.75" width="0" layer="19" extent="1-1"/>
+<wire x1="9.8" y1="10.2" x2="9.2" y2="11.2" width="0" layer="19" extent="1-1"/>
+<wire x1="11.8" y1="7.95" x2="9.8" y2="10.2" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3" y1="9.8" x2="11.8" y2="7.95" width="0" layer="19" extent="1-1"/>
+<wire x1="15.5" y1="9.4" x2="13.3" y2="9.8" width="0" layer="19" extent="1-1"/>
+<wire x1="16.5" y1="9.4" x2="15.5" y2="9.4" width="0" layer="19" extent="1-1"/>
+<wire x1="18.2" y1="7.95" x2="16.5" y2="9.4" width="0" layer="19" extent="1-1"/>
+<wire x1="21.2" y1="8.1" x2="18.2" y2="7.95" width="0" layer="19" extent="1-1"/>
+<wire x1="21.415" y1="10.5" x2="21.2" y2="8.1" width="0" layer="19" extent="1-1"/>
+<wire x1="19.8" y1="13.75" x2="21.415" y2="10.5" width="0" layer="19" extent="1-1"/>
+<wire x1="22.3" y1="13.7" x2="19.8" y2="13.75" width="0" layer="19" extent="1-1"/>
+<wire x1="23.3" y1="13.7" x2="22.3" y2="13.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS">
 <contactref element="U1" pad="32"/>
@@ -1003,7 +1003,7 @@ design rules under a new name.</description>
 <contactref element="Q1" pad="1"/>
 <contactref element="R5" pad="2"/>
 <contactref element="D1" pad="2"/>
-<wire x1="17.1" y1="11.6" x2="19" y2="13.35" width="0" layer="19" extent="1-1"/>
+<wire x1="17.1" y1="11.6" x2="19" y2="13.75" width="0" layer="19" extent="1-1"/>
 <wire x1="16.5" y1="10.4" x2="17.1" y2="11.6" width="0" layer="19" extent="1-1"/>
 <wire x1="17.4" y1="7.95" x2="16.5" y2="10.4" width="0" layer="19" extent="1-1"/>
 <wire x1="12.6" y1="7.95" x2="16.5" y2="10.4" width="0" layer="19" extent="1-1"/>
@@ -1013,14 +1013,14 @@ design rules under a new name.</description>
 <contactref element="U1" pad="35"/>
 <contactref element="J1" pad="A6"/>
 <contactref element="J1" pad="B6"/>
-<wire x1="15.75" y1="7.95" x2="19.65" y2="15.15" width="0" layer="19" extent="1-1"/>
+<wire x1="15.75" y1="7.95" x2="19.65" y2="15.55" width="0" layer="19" extent="1-1"/>
 <wire x1="14.75" y1="7.95" x2="15.75" y2="7.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USBD-">
 <contactref element="U1" pad="34"/>
 <contactref element="J1" pad="A7"/>
 <contactref element="J1" pad="B7"/>
-<wire x1="15.25" y1="7.95" x2="19.65" y2="14.35" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="7.95" x2="19.65" y2="14.75" width="0" layer="19" extent="1-1"/>
 <wire x1="14.25" y1="7.95" x2="15.25" y2="7.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
@@ -1037,8 +1037,8 @@ design rules under a new name.</description>
 <contactref element="U1" pad="40"/>
 <contactref element="S1" pad="4"/>
 <contactref element="R3" pad="1"/>
-<wire x1="24.8" y1="7.9" x2="26.3" y2="11.4" width="0" layer="19" extent="1-1"/>
-<wire x1="18.75" y1="17.15" x2="26.3" y2="11.4" width="0" layer="19" extent="1-1"/>
+<wire x1="25.3" y1="9.4" x2="18.75" y2="17.55" width="0" layer="19" extent="1-1"/>
+<wire x1="24.8" y1="5.9" x2="25.3" y2="9.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C_SCL">
 <contactref element="U1" pad="49"/>
@@ -1061,15 +1061,15 @@ design rules under a new name.</description>
 <contactref element="U1" pad="18"/>
 <contactref element="Y1" pad="2"/>
 <contactref element="C2" pad="1"/>
-<wire x1="23.5" y1="17.3" x2="24.15" y2="20.1" width="0" layer="19" extent="1-1"/>
-<wire x1="12.6" y1="13.35" x2="23.5" y2="17.3" width="0" layer="19" extent="1-1"/>
+<wire x1="24.3" y1="13.7" x2="25.05" y2="15.6" width="0" layer="19" extent="1-1"/>
+<wire x1="12.6" y1="13.75" x2="24.3" y2="13.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="U1" pad="17"/>
 <contactref element="Y1" pad="1"/>
 <contactref element="C1" pad="1"/>
-<wire x1="21.4" y1="18.2" x2="21.65" y2="20.1" width="0" layer="19" extent="1-1"/>
-<wire x1="11.8" y1="13.35" x2="21.4" y2="18.2" width="0" layer="19" extent="1-1"/>
+<wire x1="21.3" y1="13.7" x2="22.55" y2="15.6" width="0" layer="19" extent="1-1"/>
+<wire x1="11.8" y1="13.75" x2="21.3" y2="13.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="R3" pad="2"/>
@@ -1078,16 +1078,16 @@ design rules under a new name.</description>
 <contactref element="U1" pad="28"/>
 <contactref element="U2" pad="5"/>
 <contactref element="L2" pad="1"/>
-<wire x1="26.3" y1="12.4" x2="26.7" y2="13.5" width="0" layer="19" extent="1-1"/>
-<wire x1="24.485" y1="13.95" x2="26.7" y2="13.5" width="0" layer="19" extent="1-1"/>
-<wire x1="17.4" y1="13.35" x2="24.485" y2="13.95" width="0" layer="19" extent="1-1"/>
-<wire x1="16.6" y1="13.35" x2="17.4" y2="13.35" width="0" layer="19" extent="1-1"/>
-<wire x1="13.3" y1="11.6" x2="16.6" y2="13.35" width="0" layer="19" extent="1-1"/>
+<wire x1="25.3" y1="10.4" x2="25.7" y2="11.5" width="0" layer="19" extent="1-1"/>
+<wire x1="23.785" y1="11.45" x2="25.3" y2="10.4" width="0" layer="19" extent="1-1"/>
+<wire x1="17.4" y1="13.75" x2="23.785" y2="11.45" width="0" layer="19" extent="1-1"/>
+<wire x1="16.6" y1="13.75" x2="17.4" y2="13.75" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3" y1="11.6" x2="16.6" y2="13.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U1" pad="31"/>
 <contactref element="L1" pad="2"/>
-<wire x1="18.2" y1="13.35" x2="26.7" y2="15.3" width="0" layer="19" extent="1-1"/>
+<wire x1="18.2" y1="13.75" x2="25.7" y2="13.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="U2" pad="1"/>
@@ -1095,7 +1095,7 @@ design rules under a new name.</description>
 <contactref element="Q1" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="D1" pad="1"/>
-<wire x1="18.3" y1="11.4" x2="22.115" y2="13.95" width="0" layer="19" extent="1-1"/>
+<wire x1="18.3" y1="11.4" x2="21.415" y2="11.45" width="0" layer="19" extent="1-1"/>
 <wire x1="15.5" y1="10.4" x2="18.3" y2="11.4" width="0" layer="19" extent="1-1"/>
 <wire x1="14.9" y1="11.6" x2="15.5" y2="10.4" width="0" layer="19" extent="1-1"/>
 <wire x1="6.975" y1="7.085" x2="14.9" y2="11.6" width="0" layer="19" extent="1-1"/>
@@ -1103,7 +1103,7 @@ design rules under a new name.</description>
 <signal name="N$7">
 <contactref element="U2" pad="3"/>
 <contactref element="R4" pad="1"/>
-<wire x1="19.3" y1="11.4" x2="22.115" y2="12.05" width="0" layer="19" extent="1-1"/>
+<wire x1="19.3" y1="11.4" x2="21.415" y2="9.55" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
