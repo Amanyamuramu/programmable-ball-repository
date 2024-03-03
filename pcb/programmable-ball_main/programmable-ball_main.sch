@@ -1936,6 +1936,69 @@ http://www.zetex.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="Switch">
+<packages>
+<package name="CAS-120B1">
+<description>&lt;hr&gt;
+&lt;b&gt;CAS-120B1 surface mount type slide switch , 120B1 package&lt;/b&gt;
+&lt;hr&gt;
+Producted by COPAL ELECTRONICS&lt;br&gt;&lt;br&gt;
+
+Store Information : &lt;br&gt;
+Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=CAS120GCT-ND</description>
+<wire x1="-2.7" y1="-1.25" x2="2.7" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-1.25" x2="2.7" y2="1.25" width="0.127" layer="21"/>
+<wire x1="2.7" y1="1.25" x2="-2.7" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="1.25" x2="-2.7" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="0.508" x2="1.524" y2="0.508" width="0.127" layer="21"/>
+<wire x1="1.524" y1="0.508" x2="1.524" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="1.524" y1="-0.508" x2="-1.524" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-0.508" x2="-1.524" y2="0.508" width="0.127" layer="21"/>
+<smd name="2" x="0" y="2.1" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="1" x="-1.75" y="-2.1" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="1.75" y="-2.1" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<text x="-3" y="-2.8" size="1.27" layer="21" font="vector" ratio="13" rot="R90">&gt;NAME</text>
+<rectangle x1="0.508" y1="-0.508" x2="1.524" y2="0.508" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TOGGLE_SW">
+<wire x1="0" y1="1.27" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<circle x="-2.54" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="-1.905" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="1.905" radius="0.635" width="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="3" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="2" x="0" y="5.08" visible="pad" length="short" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CAS-120" prefix="SW">
+<description>&lt;hr&gt;
+&lt;b&gt;CAS-120 surface mount type slide switch&lt;/b&gt;
+&lt;hr&gt;
+Producted by COPAL ELECTRONICS&lt;br&gt;&lt;br&gt;
+
+Store Information : &lt;br&gt;
+Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=CAS120GCT-ND</description>
+<gates>
+<gate name="G$1" symbol="TOGGLE_SW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CAS-120B1" package="CAS-120B1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1979,6 +2042,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
+<part name="SW1" library="Switch" deviceset="CAS-120" device="CAS-120B1"/>
 </parts>
 <sheets>
 <sheet>
@@ -2140,6 +2204,7 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="NAME" x="130.556" y="113.919" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="130.556" y="111.379" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
+<instance part="SW1" gate="G$1" x="177.8" y="76.2" smashed="yes"/>
 </instances>
 <busses>
 </busses>
