@@ -1999,6 +1999,95 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 </deviceset>
 </devicesets>
 </library>
+<library name="MCP73832T-2ACI_OT">
+<packages>
+<package name="SOT95P270X145-5N">
+<wire x1="2.286" y1="-1.8034" x2="-2.286" y2="-1.8034" width="0.1524" layer="39"/>
+<wire x1="-2.286" y1="-1.8034" x2="-2.286" y2="1.8034" width="0.1524" layer="39"/>
+<wire x1="-2.286" y1="1.8034" x2="2.286" y2="1.8034" width="0.1524" layer="39"/>
+<wire x1="2.286" y1="1.8034" x2="2.286" y2="-1.8034" width="0.1524" layer="39"/>
+<wire x1="0.635" y1="1.5494" x2="0.3048" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.5494" x2="-0.635" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-0.889" y1="-1.5494" x2="0.889" y2="-1.5494" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="-1.5494" x2="0.889" y2="-1.1938" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="-1.1938" x2="0.889" y2="-0.6858" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="-0.6858" x2="0.889" y2="0.6858" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="1.5494" x2="0.3048" y2="1.5494" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="1.5494" x2="-0.889" y2="1.5494" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="1.5494" x2="-0.889" y2="1.1938" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="1.1938" x2="-0.889" y2="0.6858" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="0.6858" x2="-0.889" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="0.254" x2="-0.889" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="-0.254" x2="-0.889" y2="-0.6858" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="1.1938" x2="-1.6002" y2="1.1938" width="0.1524" layer="51"/>
+<wire x1="-1.6002" y1="1.1938" x2="-1.6002" y2="0.6858" width="0.1524" layer="51"/>
+<wire x1="-1.6002" y1="0.6858" x2="-0.889" y2="0.6858" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="0.254" x2="-1.6002" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-1.6002" y1="0.254" x2="-1.6002" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-1.6002" y1="-0.254" x2="-0.889" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="-1.5494" x2="-0.889" y2="-1.1938" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="-1.1938" x2="-0.889" y2="-0.6858" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="-0.6858" x2="-1.6002" y2="-0.6858" width="0.1524" layer="51"/>
+<wire x1="-1.6002" y1="-0.6858" x2="-1.6002" y2="-1.1938" width="0.1524" layer="51"/>
+<wire x1="-1.6002" y1="-1.1938" x2="-0.889" y2="-1.1938" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="-1.1938" x2="1.6002" y2="-1.1938" width="0.1524" layer="51"/>
+<wire x1="1.6002" y1="-1.1938" x2="1.6002" y2="-0.6858" width="0.1524" layer="51"/>
+<wire x1="1.6002" y1="-0.6858" x2="0.889" y2="-0.6858" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="1.5494" x2="0.889" y2="1.1938" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="1.1938" x2="0.889" y2="0.6858" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="0.6858" x2="1.6002" y2="0.6858" width="0.1524" layer="51"/>
+<wire x1="1.6002" y1="0.6858" x2="1.6002" y2="1.1938" width="0.1524" layer="51"/>
+<wire x1="1.6002" y1="1.1938" x2="0.889" y2="1.1938" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="51" curve="-180"/>
+<text x="-5.883140625" y="7.58273125" size="2.315940625" layer="25">&gt;NAME</text>
+<text x="-5.794809375" y="-7.4697" size="2.281509375" layer="27" align="top-left">&gt;VALUE</text>
+<smd name="1" x="-1.3716" y="0.9398" dx="1.3208" dy="0.5588" layer="1"/>
+<smd name="2" x="-1.3716" y="0" dx="1.3208" dy="0.5588" layer="1"/>
+<smd name="3" x="-1.3716" y="-0.9398" dx="1.3208" dy="0.5588" layer="1"/>
+<smd name="4" x="1.3716" y="-0.9398" dx="1.3208" dy="0.5588" layer="1"/>
+<smd name="5" x="1.3716" y="0.9398" dx="1.3208" dy="0.5588" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MCP73832T-2ACI/OT">
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.41" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.41" layer="94"/>
+<text x="-12.7" y="8.62" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-11.62" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="PROG" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="VDD" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="STAT" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="VBAT" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="VSS" x="17.78" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MCP73832T-2ACI/OT" prefix="U">
+<gates>
+<gate name="G$1" symbol="MCP73832T-2ACI/OT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P270X145-5N">
+<connects>
+<connect gate="G$1" pin="PROG" pad="5"/>
+<connect gate="G$1" pin="STAT" pad="1"/>
+<connect gate="G$1" pin="VBAT" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2043,6 +2132,14 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
 <part name="SW1" library="Switch" deviceset="CAS-120" device="CAS-120B1"/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U3" library="MCP73832T-2ACI_OT" deviceset="MCP73832T-2ACI/OT" device=""/>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -2063,15 +2160,15 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="279.4" y1="45.72" x2="279.4" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
 <text x="279.4" y="43.18" size="1.778" layer="97">USB TypeC</text>
 <wire x1="167.64" y1="91.44" x2="167.64" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="167.64" y1="45.72" x2="220.98" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="220.98" y1="45.72" x2="220.98" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="220.98" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="167.64" y1="45.72" x2="208.28" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="208.28" y1="45.72" x2="208.28" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="208.28" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
 <text x="170.18" y="43.18" size="1.778" layer="97">I2C Connector</text>
-<wire x1="223.52" y1="91.44" x2="223.52" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="223.52" y1="45.72" x2="276.86" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="210.82" y1="91.44" x2="210.82" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="210.82" y1="45.72" x2="276.86" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="276.86" y1="45.72" x2="276.86" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="276.86" y1="91.44" x2="223.52" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<text x="228.6" y="43.18" size="1.778" layer="97">RESET SWITCH</text>
+<wire x1="276.86" y1="91.44" x2="210.82" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="233.68" y="43.18" size="1.778" layer="97">RESET SWITCH</text>
 <wire x1="111.76" y1="91.44" x2="111.76" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="45.72" x2="165.1" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="165.1" y1="45.72" x2="165.1" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
@@ -2079,10 +2176,17 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <text x="111.76" y="43.18" size="1.778" layer="97">LIPO</text>
 <text x="314.96" y="223.52" size="1.778" layer="97">Place 10uH for dc dc</text>
 <wire x1="111.76" y1="160.02" x2="111.76" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="111.76" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="200.66" y1="99.06" x2="200.66" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="200.66" y1="160.02" x2="111.76" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
-<text x="111.76" y="96.52" size="1.778" layer="97">Power Filter</text>
+<wire x1="111.76" y1="99.06" x2="198.12" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="198.12" y1="99.06" x2="198.12" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="198.12" y1="160.02" x2="111.76" y2="160.02" width="0.1524" layer="97" style="shortdash"/>
+<text x="111.76" y="96.52" size="1.778" layer="97">3.3V regulator</text>
+<text x="119.38" y="147.32" size="1.778" layer="97">5v</text>
+<wire x1="111.76" y1="233.68" x2="220.98" y2="233.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="220.98" y1="233.68" x2="220.98" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="220.98" y1="167.64" x2="111.76" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="111.76" y1="167.64" x2="111.76" y2="233.68" width="0.1524" layer="97" style="shortdash"/>
+<text x="111.76" y="165.1" size="1.778" layer="97">LIPO CHARGING</text>
+<text x="129.54" y="180.34" size="1.778" layer="97">抵抗値調べて</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -2139,23 +2243,23 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <instance part="GND7" gate="1" x="187.96" y="104.14" smashed="yes">
 <attribute name="VALUE" x="185.42" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="GND8" gate="1" x="218.44" y="172.72" smashed="yes">
-<attribute name="VALUE" x="215.9" y="170.18" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="233.68" y="172.72" smashed="yes">
+<attribute name="VALUE" x="231.14" y="170.18" size="1.778" layer="96"/>
 </instance>
-<instance part="GND9" gate="1" x="248.92" y="172.72" smashed="yes">
-<attribute name="VALUE" x="246.38" y="170.18" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="259.08" y="172.72" smashed="yes">
+<attribute name="VALUE" x="256.54" y="170.18" size="1.778" layer="96"/>
 </instance>
-<instance part="Y1" gate="G$1" x="233.68" y="200.66" smashed="yes">
-<attribute name="NAME" x="228.59213125" y="206.76545" size="1.27196875" layer="95"/>
-<attribute name="VALUE" x="228.584840625" y="193.01726875" size="1.273790625" layer="96"/>
+<instance part="Y1" gate="G$1" x="246.38" y="200.66" smashed="yes">
+<attribute name="NAME" x="241.29213125" y="206.76545" size="1.27196875" layer="95"/>
+<attribute name="VALUE" x="241.284840625" y="193.01726875" size="1.273790625" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="218.44" y="185.42" smashed="yes">
-<attribute name="NAME" x="219.964" y="188.341" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="219.964" y="183.261" size="1.778" layer="96" font="vector"/>
+<instance part="C1" gate="G$1" x="233.68" y="185.42" smashed="yes">
+<attribute name="NAME" x="235.204" y="188.341" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="235.204" y="183.261" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C2" gate="G$1" x="248.92" y="185.42" smashed="yes">
-<attribute name="NAME" x="250.444" y="188.341" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="250.444" y="183.261" size="1.778" layer="96" font="vector"/>
+<instance part="C2" gate="G$1" x="259.08" y="185.42" smashed="yes">
+<attribute name="NAME" x="260.604" y="188.341" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="260.604" y="183.261" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="342.9" y="228.6" smashed="yes">
 <attribute name="VALUE" x="342.9" y="231.394" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -2204,7 +2308,33 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <attribute name="NAME" x="130.556" y="113.919" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="130.556" y="111.379" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="SW1" gate="G$1" x="177.8" y="76.2" smashed="yes"/>
+<instance part="SW1" gate="G$1" x="220.98" y="66.04" smashed="yes"/>
+<instance part="SUPPLY4" gate="G$1" x="190.5" y="83.82" smashed="yes">
+<attribute name="VALUE" x="190.5" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="GND12" gate="1" x="190.5" y="55.88" smashed="yes">
+<attribute name="VALUE" x="187.96" y="53.34" size="1.778" layer="96"/>
+</instance>
+<instance part="U3" gate="G$1" x="165.1" y="193.04" smashed="yes">
+<attribute name="NAME" x="152.4" y="201.66" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="152.4" y="181.42" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="GND13" gate="1" x="218.44" y="50.8" smashed="yes">
+<attribute name="VALUE" x="215.9" y="48.26" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="187.96" y="175.26" smashed="yes">
+<attribute name="VALUE" x="185.42" y="172.72" size="1.778" layer="96"/>
+</instance>
+<instance part="GND15" gate="1" x="134.62" y="175.26" smashed="yes">
+<attribute name="VALUE" x="132.08" y="172.72" size="1.778" layer="96"/>
+</instance>
+<instance part="GND16" gate="1" x="198.12" y="175.26" smashed="yes">
+<attribute name="VALUE" x="195.58" y="172.72" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="198.12" y="187.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="196.596" y="185.039" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="196.596" y="182.499" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2253,12 +2383,12 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="218.44" y1="182.88" x2="218.44" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="182.88" x2="233.68" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="248.92" y1="182.88" x2="248.92" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="182.88" x2="259.08" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -2270,6 +2400,26 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="132.08" y1="111.76" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="190.5" y1="66.04" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="60.96" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VSS"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="182.88" y1="190.5" x2="187.96" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="190.5" x2="187.96" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="198.12" y1="182.88" x2="198.12" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -2295,6 +2445,15 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="116.84" y1="124.46" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
 <junction x="116.84" y="124.46"/>
+</segment>
+<segment>
+<label x="121.92" y="215.9" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<wire x1="121.92" y1="195.58" x2="121.92" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="205.74" x2="121.92" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="205.74" x2="172.72" y2="205.74" width="0.1524" layer="91"/>
+<junction x="121.92" y="205.74"/>
 </segment>
 </net>
 <net name="USBD+" class="0">
@@ -2365,16 +2524,14 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="P0.25"/>
-<wire x1="276.86" y1="139.7" x2="271.78" y2="139.7" width="0.1524" layer="91"/>
-<label x="271.78" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="187.96" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
+<label x="182.88" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="P0.26"/>
-<wire x1="276.86" y1="137.16" x2="271.78" y2="137.16" width="0.1524" layer="91"/>
-<label x="271.78" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="187.96" y1="71.12" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
+<label x="182.88" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWDCLK" class="0">
@@ -2402,28 +2559,41 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="132.08" y1="149.86" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<label x="198.12" y="215.9" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="VBAT"/>
+<wire x1="182.88" y1="195.58" x2="198.12" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="195.58" x2="198.12" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="198.12" y1="195.58" x2="198.12" y2="190.5" width="0.1524" layer="91"/>
+<junction x="198.12" y="195.58"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="71.12" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
+<label x="152.4" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.01/XL2"/>
-<wire x1="276.86" y1="200.66" x2="248.92" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="200.66" x2="248.92" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="200.66" x2="259.08" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="200.66" x2="259.08" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="200.66" x2="248.92" y2="200.66" width="0.1524" layer="91"/>
-<junction x="248.92" y="200.66"/>
+<wire x1="256.54" y1="200.66" x2="259.08" y2="200.66" width="0.1524" layer="91"/>
+<junction x="259.08" y="200.66"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P0.00/XL1"/>
-<wire x1="276.86" y1="203.2" x2="248.92" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="203.2" x2="248.92" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="213.36" x2="218.44" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="213.36" x2="218.44" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="200.66" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
-<junction x="218.44" y="200.66"/>
-<wire x1="218.44" y1="200.66" x2="218.44" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="203.2" x2="259.08" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="203.2" x2="259.08" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="213.36" x2="233.68" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="213.36" x2="233.68" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="200.66" x2="236.22" y2="200.66" width="0.1524" layer="91"/>
+<junction x="233.68" y="200.66"/>
+<wire x1="233.68" y1="200.66" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
@@ -2457,6 +2627,10 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <pinref part="L2" gate="G$1" pin="1"/>
 <junction x="187.96" y="124.46"/>
 </segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
+<wire x1="190.5" y1="83.82" x2="190.5" y2="78.74" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -2483,7 +2657,7 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="127" y1="124.46" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="EN" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="EN"/>
 <wire x1="152.4" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
@@ -2491,6 +2665,26 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="149.86" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="111.76" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
+<label x="149.86" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="71.12" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="220.98" y="76.2" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="PROG"/>
+<wire x1="147.32" y1="198.12" x2="134.62" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="198.12" x2="134.62" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<wire x1="185.42" y1="198.12" x2="185.42" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="STAT"/>
+<wire x1="182.88" y1="198.12" x2="185.42" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
