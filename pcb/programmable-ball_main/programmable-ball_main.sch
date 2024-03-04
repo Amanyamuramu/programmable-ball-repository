@@ -1181,6 +1181,191 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
+<deviceset name="4.7KOHM" prefix="R">
+<description>&lt;h3&gt;4.7kΩ resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07857"/>
+<attribute name="VALUE" value="4.7k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15343" constant="no"/>
+<attribute name="VALUE" value="4.7k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1KOHM" prefix="R">
+<description>&lt;h3&gt;1kΩ resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12182"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/4W-1%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12182"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/4W-1%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12182"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12182"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/4W-5%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08380"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/4W-5%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08380"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ-1/4W-5%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08380"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/4W-5%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08380"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/6W-5%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09769"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07856"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402-1/16W-1%" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-14342" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-14342" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="S2B-ZR-SM4A-TF">
@@ -1936,69 +2121,6 @@ http://www.zetex.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="Switch">
-<packages>
-<package name="CAS-120B1">
-<description>&lt;hr&gt;
-&lt;b&gt;CAS-120B1 surface mount type slide switch , 120B1 package&lt;/b&gt;
-&lt;hr&gt;
-Producted by COPAL ELECTRONICS&lt;br&gt;&lt;br&gt;
-
-Store Information : &lt;br&gt;
-Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=CAS120GCT-ND</description>
-<wire x1="-2.7" y1="-1.25" x2="2.7" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="2.7" y1="-1.25" x2="2.7" y2="1.25" width="0.127" layer="21"/>
-<wire x1="2.7" y1="1.25" x2="-2.7" y2="1.25" width="0.127" layer="21"/>
-<wire x1="-2.7" y1="1.25" x2="-2.7" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0.508" x2="1.524" y2="0.508" width="0.127" layer="21"/>
-<wire x1="1.524" y1="0.508" x2="1.524" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="1.524" y1="-0.508" x2="-1.524" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="-0.508" x2="-1.524" y2="0.508" width="0.127" layer="21"/>
-<smd name="2" x="0" y="2.1" dx="1.2" dy="0.7" layer="1" rot="R90"/>
-<smd name="1" x="-1.75" y="-2.1" dx="1.2" dy="0.7" layer="1" rot="R90"/>
-<smd name="3" x="1.75" y="-2.1" dx="1.2" dy="0.7" layer="1" rot="R90"/>
-<text x="-3" y="-2.8" size="1.27" layer="21" font="vector" ratio="13" rot="R90">&gt;NAME</text>
-<rectangle x1="0.508" y1="-0.508" x2="1.524" y2="0.508" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TOGGLE_SW">
-<wire x1="0" y1="1.27" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
-<circle x="-2.54" y="-1.905" radius="0.635" width="0.254" layer="94"/>
-<circle x="2.54" y="-1.905" radius="0.635" width="0.254" layer="94"/>
-<circle x="0" y="1.905" radius="0.635" width="0.254" layer="94"/>
-<pin name="1" x="-2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
-<pin name="3" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
-<pin name="2" x="0" y="5.08" visible="pad" length="short" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CAS-120" prefix="SW">
-<description>&lt;hr&gt;
-&lt;b&gt;CAS-120 surface mount type slide switch&lt;/b&gt;
-&lt;hr&gt;
-Producted by COPAL ELECTRONICS&lt;br&gt;&lt;br&gt;
-
-Store Information : &lt;br&gt;
-Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=CAS120GCT-ND</description>
-<gates>
-<gate name="G$1" symbol="TOGGLE_SW" x="0" y="0"/>
-</gates>
-<devices>
-<device name="CAS-120B1" package="CAS-120B1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MCP73832T-2ACI_OT">
 <packages>
 <package name="SOT95P270X145-5N">
@@ -2088,6 +2210,311 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 </deviceset>
 </devicesets>
 </library>
+<library name="CAS_120TA">
+<packages>
+<package name="CAS-120A">
+<smd name="1" x="0.79" y="0.117" dx="0.9906" dy="1.6002" layer="1"/>
+<smd name="2" x="2.54" y="2.417" dx="0.9906" dy="1.6002" layer="1"/>
+<smd name="3" x="4.29" y="0.117" dx="0.9906" dy="1.6002" layer="1"/>
+<wire x1="-0.2921" y1="-0.254" x2="-0.038" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="5.3721" y1="-0.254" x2="5.3721" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="5.3721" y1="2.794" x2="3.368" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="-0.2921" y1="2.794" x2="-0.2921" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.618" y1="-0.254" x2="3.462" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.712" y1="2.794" x2="-0.2921" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="5.118" y1="-0.254" x2="5.3721" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.1651" y1="-0.127" x2="5.2451" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="5.2451" y1="-0.127" x2="5.2451" y2="2.667" width="0.1524" layer="51"/>
+<wire x1="5.2451" y1="2.667" x2="-0.1651" y2="2.667" width="0.1524" layer="51"/>
+<wire x1="-0.1651" y1="2.667" x2="-0.1651" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="1.171" y1="2.022" x2="0.409" y2="2.022" width="0.508" layer="51" curve="-180"/>
+<wire x1="0.409" y1="2.022" x2="1.171" y2="2.022" width="0.508" layer="51" curve="-180"/>
+<text x="0.8112" y="4.562" size="1.27" layer="27" ratio="6">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="TOGGLE">
+<description>&lt;h3&gt;Single Pole, Double Throw (SPDT) Switch&lt;/h3&gt;
+&lt;p&gt;Single-pole, double-throw (SPDT) switch.&lt;/p&gt;</description>
+<wire x1="0" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<text x="1.27" y="3.048" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="1.016" y="-3.302" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="O" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CASA-120TA-PB">
+<gates>
+<gate name="G$1" symbol="TOGGLE" x="-1564.64" y="-33.02"/>
+</gates>
+<devices>
+<device name="" package="CAS-120A">
+<connects>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="P" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-LED">
+<description>&lt;h3&gt;SparkFun LEDs&lt;/h3&gt;
+This library contains discrete LEDs for illumination or indication, but no displays.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="LED-0603">
+<description>&lt;B&gt;LED 0603 SMT&lt;/B&gt;&lt;p&gt;
+0603, surface mount.
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.075inch &lt;/li&gt;
+&lt;li&gt;Area: 0.06" x 0.03"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;LED - BLUE&lt;/li&gt;</description>
+<smd name="C" x="0.877" y="0" dx="1" dy="1" layer="1" roundness="30" rot="R270"/>
+<smd name="A" x="-0.877" y="0" dx="1" dy="1" layer="1" roundness="30" rot="R270"/>
+<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.635" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.5875" y1="0.47625" x2="1.5875" y2="-0.47625" width="0.2032" layer="21"/>
+<wire x1="0.15875" y1="0.47625" x2="0.15875" y2="0" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="0.15875" y2="-0.47625" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="-0.15875" y2="0.3175" width="0.127" layer="51"/>
+<wire x1="0.15875" y1="0" x2="-0.15875" y2="-0.3175" width="0.127" layer="51"/>
+</package>
+<package name="LED-1206">
+<description>&lt;h3&gt;LED 1206 SMT&lt;/h3&gt;
+
+1206, surface mount. 
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: &lt;/li&gt;
+&lt;li&gt;Area: 0.125" x 0.06"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;&lt;/ul&gt;</description>
+<wire x1="2.4" y1="0.6825" x2="2.4" y2="-0.6825" width="0.2032" layer="21"/>
+<smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
+<smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
+<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.9525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.65375" y1="0.6825" x2="0.65375" y2="-0.6825" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
+</package>
+<package name="LED-1206-HIDDENSILK">
+<wire x1="0.6474" y1="0.6825" x2="0.6474" y2="-0.6825" width="0.2032" layer="21"/>
+<smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
+<smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
+<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.9525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.65375" y1="0.6825" x2="0.65375" y2="-0.6825" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
+</package>
+<package name="LED-0402">
+<description>&lt;h3&gt;LED-0402&lt;/h3&gt;
+&lt;p&gt;
+Standard 0402 sized pads with cathode pin indicator.
+&lt;/p&gt;</description>
+<smd name="A" x="-0.5" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="C" x="0.5" y="0" dx="0.6" dy="0.6" layer="1"/>
+<text x="0" y="0.562" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.562" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.002540625" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.002540625" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.002540625" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.002540625" layer="51"/>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.3" y2="0.25" layer="51"/>
+<rectangle x1="0.3" y1="-0.25" x2="0.5" y2="0.25" layer="51" rot="R180"/>
+<wire x1="0.9262" y1="0.4262" x2="-0.9262" y2="0.4262" width="0.05" layer="39"/>
+<wire x1="-0.9262" y1="0.4262" x2="-0.9262" y2="-0.4262" width="0.05" layer="39"/>
+<wire x1="-0.9262" y1="-0.4262" x2="0.9262" y2="-0.4262" width="0.05" layer="39"/>
+<wire x1="0.9262" y1="-0.4262" x2="0.9262" y2="0.4262" width="0.05" layer="39"/>
+<wire x1="1.27" y1="0.381" x2="1.27" y2="-0.381" width="0.1524" layer="21"/>
+</package>
+<package name="LED-0805">
+<description>&lt;B&gt;LED 0805 SMT&lt;/B&gt;&lt;p&gt;
+0805, surface mount.
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch:1.05mm &lt;/li&gt;
+&lt;li&gt;Area: 1.2mm x 1.2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;LED - RED&lt;/li&gt;</description>
+<smd name="A" x="-1.05" y="0" dx="1.2" dy="1.2" layer="1" roundness="30"/>
+<smd name="C" x="1.05" y="0" dx="1.2" dy="1.2" layer="1" roundness="30"/>
+<wire x1="2" y1="0.75" x2="2" y2="-0.75" width="0.1524" layer="21"/>
+<wire x1="-1.8" y1="0.75" x2="-1.8" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="-1.8" y1="-0.75" x2="1.8" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="1.8" y1="-0.75" x2="1.8" y2="0.75" width="0.05" layer="39"/>
+<wire x1="1.8" y1="0.75" x2="-1.8" y2="0.75" width="0.05" layer="39"/>
+<text x="0" y="1" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.3" y1="0.4" x2="0.3" y2="0" width="0.1" layer="51"/>
+<wire x1="0.3" y1="0" x2="0.3" y2="-0.4" width="0.1" layer="51"/>
+<wire x1="0" y1="0.3" x2="0.3" y2="0" width="0.1" layer="51"/>
+<wire x1="0" y1="-0.3" x2="0.3" y2="0" width="0.1" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LED">
+<description>&lt;h3&gt;LED&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="-3.429" y="-4.572" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-4.572" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LED-RED" prefix="D" uservalue="yes">
+<description>&lt;h3&gt;Red SMD LED&lt;/h3&gt;
+&lt;p&gt;Used in manufacturing of most products at SparkFun&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Packages:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package &lt;a href="http://docs.avagotech.com/docs/AV02-0551EN"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;0603 SMART&lt;/b&gt; - SMD 0603 SMART package ( more efficient and expensive)&lt;a href="http://www.osram-os.com/Graphics/XPic2/00077099_0.pdf"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; 1206&lt;/b&gt; - SMD1206  package &lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150OVS4.pdff"&gt;[Product Link]&lt;/li&gt;
+&lt;ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/821”&gt;Pro Mini 328 -5V&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12757”&gt;RedBoard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13613”&gt;IOIO-OTG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-00819"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1206" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09912"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0603-SMART" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-11154" constant="no"/>
+<attribute name="VALUE" value="Red" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_HIDDENSILK" package="LED-1206-HIDDENSILK">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09912" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-WE" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-16511" constant="no"/>
+<attribute name="VALUE" value="Red" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0402" package="LED-0402">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-16757" constant="no"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805" package="LED-0805">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-16865"/>
+<attribute name="VALUE" value="RED"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2131,7 +2558,6 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
-<part name="SW1" library="Switch" deviceset="CAS-120" device="CAS-120B1"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U3" library="MCP73832T-2ACI_OT" deviceset="MCP73832T-2ACI/OT" device=""/>
@@ -2140,40 +2566,46 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
+<part name="S2" library="CAS_120TA" deviceset="CASA-120TA-PB" device=""/>
+<part name="R6" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0402T-1/16W-1%" value="4.7k"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED-RED" device="_0402" value="RED"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="1KOHM" device="-0402T-1/16W-1%" value="1k"/>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<wire x1="368.3" y1="38.1" x2="104.14" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="104.14" y1="38.1" x2="104.14" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="368.3" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="104.14" y1="40.64" x2="104.14" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="104.14" y1="241.3" x2="368.3" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="368.3" y1="241.3" x2="368.3" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="368.3" y1="241.3" x2="368.3" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
 <text x="104.14" y="30.48" size="3.81" layer="97">nRF52840</text>
 <wire x1="15.24" y1="241.3" x2="99.06" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="99.06" y1="241.3" x2="99.06" y2="187.96" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="99.06" y1="187.96" x2="15.24" y2="187.96" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="187.96" x2="15.24" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
 <text x="53.34" y="213.36" size="1.778" layer="97">電源系</text>
-<wire x1="279.4" y1="91.44" x2="360.68" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="360.68" y1="91.44" x2="360.68" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="360.68" y1="45.72" x2="279.4" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="281.94" y1="91.44" x2="363.22" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="363.22" y1="91.44" x2="363.22" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="363.22" y1="45.72" x2="281.94" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="281.94" y1="45.72" x2="281.94" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="281.94" y="43.18" size="1.778" layer="97">USB TypeC</text>
+<wire x1="185.42" y1="91.44" x2="185.42" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="185.42" y1="45.72" x2="210.82" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="210.82" y1="45.72" x2="210.82" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="210.82" y1="91.44" x2="185.42" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="185.42" y="43.18" size="1.778" layer="97">JLink Debugger</text>
+<wire x1="213.36" y1="91.44" x2="213.36" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="213.36" y1="45.72" x2="279.4" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="279.4" y1="45.72" x2="279.4" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<text x="279.4" y="43.18" size="1.778" layer="97">USB TypeC</text>
-<wire x1="167.64" y1="91.44" x2="167.64" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="167.64" y1="45.72" x2="208.28" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="208.28" y1="45.72" x2="208.28" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="208.28" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<text x="170.18" y="43.18" size="1.778" layer="97">I2C Connector</text>
-<wire x1="210.82" y1="91.44" x2="210.82" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="210.82" y1="45.72" x2="276.86" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="276.86" y1="45.72" x2="276.86" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="276.86" y1="91.44" x2="210.82" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<text x="233.68" y="43.18" size="1.778" layer="97">RESET SWITCH</text>
-<wire x1="111.76" y1="91.44" x2="111.76" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="111.76" y1="45.72" x2="165.1" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="165.1" y1="45.72" x2="165.1" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="165.1" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<text x="111.76" y="43.18" size="1.778" layer="97">LIPO</text>
+<wire x1="279.4" y1="91.44" x2="213.36" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="236.22" y="43.18" size="1.778" layer="97">RESET SWITCH</text>
+<wire x1="109.22" y1="91.44" x2="109.22" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="109.22" y1="45.72" x2="152.4" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="152.4" y1="45.72" x2="152.4" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="152.4" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="109.22" y="43.18" size="1.778" layer="97">LIPO</text>
 <text x="314.96" y="223.52" size="1.778" layer="97">Place 10uH for dc dc</text>
 <wire x1="111.76" y1="160.02" x2="111.76" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="99.06" x2="198.12" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
@@ -2186,7 +2618,12 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="220.98" y1="167.64" x2="111.76" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="167.64" x2="111.76" y2="233.68" width="0.1524" layer="97" style="shortdash"/>
 <text x="111.76" y="165.1" size="1.778" layer="97">LIPO CHARGING</text>
-<text x="129.54" y="180.34" size="1.778" layer="97">抵抗値調べて</text>
+<text x="114.3" y="177.8" size="1.778" layer="97">1000/200mAh</text>
+<wire x1="154.94" y1="91.44" x2="154.94" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="154.94" y1="45.72" x2="182.88" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="182.88" y1="91.44" x2="154.94" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="154.94" y="43.18" size="1.778" layer="97">I2C Connector</text>
+<wire x1="182.88" y1="45.72" x2="182.88" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -2201,40 +2638,40 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <instance part="GND1" gate="1" x="335.28" y="109.22" smashed="yes">
 <attribute name="VALUE" x="332.74" y="106.68" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="345.44" y="50.8" smashed="yes">
-<attribute name="VALUE" x="342.9" y="48.26" size="1.778" layer="96"/>
+<instance part="GND3" gate="1" x="347.98" y="50.8" smashed="yes">
+<attribute name="VALUE" x="345.44" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="320.04" y="71.12" smashed="yes">
-<attribute name="NAME" x="307.34" y="84.582" size="1.778" layer="95"/>
-<attribute name="VALUE" x="307.34" y="57.658" size="1.778" layer="96" rot="MR180"/>
+<instance part="J1" gate="G$1" x="322.58" y="71.12" smashed="yes">
+<attribute name="NAME" x="309.88" y="84.582" size="1.778" layer="95"/>
+<attribute name="VALUE" x="309.88" y="57.658" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="GND2" gate="1" x="353.06" y="50.8" smashed="yes">
-<attribute name="VALUE" x="350.52" y="48.26" size="1.778" layer="96"/>
+<instance part="GND2" gate="1" x="355.6" y="50.8" smashed="yes">
+<attribute name="VALUE" x="353.06" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="287.02" y="50.8" smashed="yes">
-<attribute name="VALUE" x="284.48" y="48.26" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="289.56" y="50.8" smashed="yes">
+<attribute name="VALUE" x="287.02" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="R1" x="287.02" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="285.496" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="288.544" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R1" gate="R1" x="289.56" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="288.036" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="291.084" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R2" gate="R1" x="353.06" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="351.536" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="354.584" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R2" gate="R1" x="355.6" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="354.076" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="357.124" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="S1" gate="G$1" x="243.84" y="60.96" smashed="yes">
-<attribute name="NAME" x="241.3" y="63.5" size="1.778" layer="95"/>
-<attribute name="VALUE" x="233.68" y="55.88" size="1.778" layer="96"/>
+<instance part="S1" gate="G$1" x="246.38" y="60.96" smashed="yes">
+<attribute name="NAME" x="243.84" y="63.5" size="1.778" layer="95"/>
+<attribute name="VALUE" x="236.22" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="233.68" y="50.8" smashed="yes">
-<attribute name="VALUE" x="231.14" y="48.26" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="236.22" y="50.8" smashed="yes">
+<attribute name="VALUE" x="233.68" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="P1" gate="G$1" x="127" y="71.12" smashed="yes">
-<attribute name="NAME" x="127" y="74.169159375" size="1.27048125" layer="95"/>
-<attribute name="VALUE" x="127" y="64.256590625" size="1.271" layer="96"/>
+<instance part="P1" gate="G$1" x="121.92" y="71.12" smashed="yes">
+<attribute name="NAME" x="121.92" y="74.169159375" size="1.27048125" layer="95"/>
+<attribute name="VALUE" x="121.92" y="64.256590625" size="1.271" layer="96"/>
 </instance>
-<instance part="GND6" gate="1" x="121.92" y="50.8" smashed="yes">
-<attribute name="VALUE" x="119.38" y="48.26" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="116.84" y="50.8" smashed="yes">
+<attribute name="VALUE" x="114.3" y="48.26" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="G$1" x="165.1" y="119.38" smashed="yes">
 <attribute name="NAME" x="157.43705" y="128.027609375" size="2.08946875" layer="95" ratio="10" rot="SR0"/>
@@ -2267,12 +2704,12 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <instance part="SUPPLY2" gate="G$1" x="187.96" y="137.16" smashed="yes">
 <attribute name="VALUE" x="187.96" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="251.46" y="83.82" smashed="yes">
-<attribute name="VALUE" x="251.46" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY3" gate="G$1" x="254" y="83.82" smashed="yes">
+<attribute name="VALUE" x="254" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="R3" gate="G$1" x="251.46" y="73.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="249.936" y="73.66" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="252.984" y="73.66" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R3" gate="G$1" x="254" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="252.476" y="73.66" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="255.524" y="73.66" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="L1" gate="G$1" x="342.9" y="218.44" smashed="yes" rot="MR0">
 <attribute name="NAME" x="341.63" y="220.98" size="1.778" layer="95" font="vector" rot="MR0"/>
@@ -2308,25 +2745,24 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <attribute name="NAME" x="130.556" y="113.919" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="130.556" y="111.379" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="SW1" gate="G$1" x="220.98" y="66.04" smashed="yes"/>
-<instance part="SUPPLY4" gate="G$1" x="190.5" y="83.82" smashed="yes">
-<attribute name="VALUE" x="190.5" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="203.2" y="83.82" smashed="yes">
+<attribute name="VALUE" x="203.2" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND12" gate="1" x="190.5" y="55.88" smashed="yes">
-<attribute name="VALUE" x="187.96" y="53.34" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="203.2" y="60.96" smashed="yes">
+<attribute name="VALUE" x="200.66" y="58.42" size="1.778" layer="96"/>
 </instance>
 <instance part="U3" gate="G$1" x="165.1" y="193.04" smashed="yes">
 <attribute name="NAME" x="152.4" y="201.66" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="152.4" y="181.42" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="GND13" gate="1" x="218.44" y="50.8" smashed="yes">
-<attribute name="VALUE" x="215.9" y="48.26" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="220.98" y="50.8" smashed="yes">
+<attribute name="VALUE" x="218.44" y="48.26" size="1.778" layer="96"/>
 </instance>
 <instance part="GND14" gate="1" x="187.96" y="175.26" smashed="yes">
 <attribute name="VALUE" x="185.42" y="172.72" size="1.778" layer="96"/>
 </instance>
-<instance part="GND15" gate="1" x="134.62" y="175.26" smashed="yes">
-<attribute name="VALUE" x="132.08" y="172.72" size="1.778" layer="96"/>
+<instance part="GND15" gate="1" x="134.62" y="172.72" smashed="yes">
+<attribute name="VALUE" x="132.08" y="170.18" size="1.778" layer="96"/>
 </instance>
 <instance part="GND16" gate="1" x="198.12" y="175.26" smashed="yes">
 <attribute name="VALUE" x="195.58" y="172.72" size="1.778" layer="96"/>
@@ -2334,6 +2770,28 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <instance part="C4" gate="G$1" x="198.12" y="187.96" smashed="yes" rot="R180">
 <attribute name="NAME" x="196.596" y="185.039" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="196.596" y="182.499" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="S2" gate="G$1" x="223.52" y="68.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="226.568" y="67.31" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="220.218" y="67.564" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+</instance>
+<instance part="R6" gate="G$1" x="134.62" y="182.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="133.096" y="182.88" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="136.144" y="182.88" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="D2" gate="G$1" x="165.1" y="205.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="164.592" y="209.931" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="169.672" y="207.645" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="R7" gate="G$1" x="147.32" y="205.74" smashed="yes">
+<attribute name="NAME" x="147.32" y="207.264" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="147.32" y="204.216" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="175.26" y="83.82" smashed="yes">
+<attribute name="VALUE" x="175.26" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="GND17" gate="1" x="175.26" y="55.88" smashed="yes">
+<attribute name="VALUE" x="172.72" y="53.34" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -2343,12 +2801,12 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <segment>
 <pinref part="R1" gate="R1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="287.02" y1="55.88" x2="287.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="55.88" x2="289.56" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="R1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="353.06" y1="55.88" x2="353.06" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="55.88" x2="355.6" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -2357,21 +2815,21 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="335.28" y1="121.92" x2="335.28" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="337.82" y1="60.96" x2="345.44" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="60.96" x2="347.98" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="345.44" y1="60.96" x2="345.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="60.96" x2="347.98" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="60.96" x2="233.68" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="60.96" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="233.68" y1="60.96" x2="233.68" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="60.96" x2="236.22" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="P1" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="68.58" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="68.58" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -2403,12 +2861,12 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="190.5" y1="66.04" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="68.58" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="60.96" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="63.5" x2="220.98" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="S2" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VSS"/>
@@ -2421,6 +2879,15 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="198.12" y1="182.88" x2="198.12" y2="177.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="134.62" y1="177.8" x2="134.62" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="175.26" y1="66.04" x2="175.26" y2="58.42" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
@@ -2430,8 +2897,8 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
-<wire x1="337.82" y1="81.28" x2="345.44" y2="81.28" width="0.1524" layer="91"/>
-<label x="345.44" y="81.28" size="1.778" layer="95" xref="yes"/>
+<wire x1="340.36" y1="81.28" x2="347.98" y2="81.28" width="0.1524" layer="91"/>
+<label x="347.98" y="81.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <label x="116.84" y="149.86" size="1.778" layer="95" rot="R90" xref="yes"/>
@@ -2452,8 +2919,9 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="121.92" y1="195.58" x2="121.92" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="205.74" x2="121.92" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="205.74" x2="172.72" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="205.74" x2="142.24" y2="205.74" width="0.1524" layer="91"/>
 <junction x="121.92" y="205.74"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="USBD+" class="0">
@@ -2463,13 +2931,13 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <label x="337.82" y="182.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="297.18" y1="73.66" x2="302.26" y2="73.66" width="0.1524" layer="91"/>
-<label x="297.18" y="73.66" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="299.72" y1="73.66" x2="304.8" y2="73.66" width="0.1524" layer="91"/>
+<label x="299.72" y="73.66" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="D+_A"/>
 </segment>
 <segment>
-<wire x1="337.82" y1="71.12" x2="342.9" y2="71.12" width="0.1524" layer="91"/>
-<label x="342.9" y="71.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="340.36" y1="71.12" x2="345.44" y2="71.12" width="0.1524" layer="91"/>
+<label x="345.44" y="71.12" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="D+_B"/>
 </segment>
 </net>
@@ -2480,30 +2948,30 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <label x="337.82" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="297.18" y1="71.12" x2="302.26" y2="71.12" width="0.1524" layer="91"/>
-<label x="297.18" y="71.12" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="299.72" y1="71.12" x2="304.8" y2="71.12" width="0.1524" layer="91"/>
+<label x="299.72" y="71.12" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="D-_A"/>
 </segment>
 <segment>
-<wire x1="337.82" y1="73.66" x2="342.9" y2="73.66" width="0.1524" layer="91"/>
-<label x="342.9" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="340.36" y1="73.66" x2="345.44" y2="73.66" width="0.1524" layer="91"/>
+<label x="345.44" y="73.66" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="D-_B"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="CC1_B"/>
-<wire x1="337.82" y1="68.58" x2="353.06" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="68.58" x2="355.6" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R2" gate="R1" pin="2"/>
-<wire x1="353.06" y1="68.58" x2="353.06" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="68.58" x2="355.6" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="CC1_A"/>
-<wire x1="302.26" y1="76.2" x2="287.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="76.2" x2="289.56" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R1" gate="R1" pin="2"/>
-<wire x1="287.02" y1="76.2" x2="287.02" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="76.2" x2="289.56" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -2514,24 +2982,28 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="248.92" y1="60.96" x2="251.46" y2="60.96" width="0.1524" layer="91"/>
-<label x="256.54" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="251.46" y1="60.96" x2="254" y2="60.96" width="0.1524" layer="91"/>
+<label x="259.08" y="60.96" size="1.27" layer="95" xref="yes"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="60.96" x2="256.54" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="68.58" x2="251.46" y2="60.96" width="0.1524" layer="91"/>
-<junction x="251.46" y="60.96"/>
+<wire x1="254" y1="60.96" x2="259.08" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="254" y1="68.58" x2="254" y2="60.96" width="0.1524" layer="91"/>
+<junction x="254" y="60.96"/>
+</segment>
+<segment>
+<wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
+<label x="198.12" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
-<wire x1="187.96" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
-<label x="182.88" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="172.72" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
+<label x="167.64" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
-<wire x1="187.96" y1="71.12" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
-<label x="182.88" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="172.72" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
+<label x="167.64" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWDCLK" class="0">
@@ -2540,6 +3012,10 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="332.74" y1="193.04" x2="337.82" y2="193.04" width="0.1524" layer="91"/>
 <label x="337.82" y="193.04" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="200.66" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+<label x="198.12" y="73.66" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
@@ -2547,12 +3023,16 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="332.74" y1="190.5" x2="337.82" y2="190.5" width="0.1524" layer="91"/>
 <label x="337.82" y="190.5" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="200.66" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
+<label x="198.12" y="76.2" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="P1" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="71.12" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
-<label x="121.92" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="116.84" y1="71.12" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
+<label x="116.84" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <label x="132.08" y="149.86" size="1.778" layer="95" rot="R90" xref="yes"/>
@@ -2569,8 +3049,8 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <junction x="198.12" y="195.58"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="71.12" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
-<label x="152.4" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="139.7" y1="71.12" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<label x="139.7" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2602,7 +3082,7 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="83.82" x2="251.46" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="254" y1="83.82" x2="254" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
@@ -2629,7 +3109,11 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="190.5" y1="83.82" x2="190.5" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="83.82" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
+<wire x1="175.26" y1="83.82" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2668,9 +3152,9 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <label x="149.86" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="71.12" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
-<label x="220.98" y="76.2" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="223.52" y1="71.12" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
+<label x="223.52" y="76.2" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="S2" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -2678,6 +3162,7 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <pinref part="U3" gate="G$1" pin="PROG"/>
 <wire x1="147.32" y1="198.12" x2="134.62" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="198.12" x2="134.62" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -2685,6 +3170,15 @@ Digi-Key : http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=
 <wire x1="185.42" y1="198.12" x2="185.42" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="STAT"/>
 <wire x1="182.88" y1="198.12" x2="185.42" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="170.18" y1="205.74" x2="185.42" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="152.4" y1="205.74" x2="162.56" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
