@@ -1673,6 +1673,60 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
+<package name="0402">
+<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
+<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="CAP-PTH-SMALL-KIT">
+<description>&lt;h3&gt;CAP-PTH-SMALL-KIT&lt;/h3&gt;
+Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="21"/>
+<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.254" layer="21"/>
+<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
+<pad name="2" x="1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
+<polygon width="0.127" layer="30">
+<vertex x="-1.4021" y="-0.9475" curve="-90"/>
+<vertex x="-2.357" y="-0.0178" curve="-90.011749"/>
+<vertex x="-1.4046" y="0.9576" curve="-90"/>
+<vertex x="-0.4546" y="-0.0204" curve="-90.024193"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-1.4046" y="-0.4395" curve="-90.012891"/>
+<vertex x="-1.8491" y="-0.0153" curve="-90"/>
+<vertex x="-1.4046" y="0.452" curve="-90"/>
+<vertex x="-0.9627" y="-0.0051" curve="-90.012967"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="1.397" y="-0.9475" curve="-90"/>
+<vertex x="0.4421" y="-0.0178" curve="-90.011749"/>
+<vertex x="1.3945" y="0.9576" curve="-90"/>
+<vertex x="2.3445" y="-0.0204" curve="-90.024193"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="1.3945" y="-0.4395" curve="-90.012891"/>
+<vertex x="0.95" y="-0.0153" curve="-90"/>
+<vertex x="1.3945" y="0.452" curve="-90"/>
+<vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -1785,6 +1839,183 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="CAP-14848" constant="no"/>
 <attribute name="VALUE" value="10uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0.1UF" prefix="C">
+<description>&lt;h3&gt;0.1µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402-16V-10%" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-12416"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-25V-(+80/-20%)" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-00810"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-25V-5%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08604"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-KIT-EZ-50V-20%" package="CAP-PTH-SMALL-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08370"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-100V-10%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08390"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-16V-10%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-12416" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402-6.3V-10%-X7R" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-14993" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402-10V-10%-X7R" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-15083" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-6.3V-10%-X7R" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-14993" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-10V-10%-X7R" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-15083" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-100V-10%-X7R-WE" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-16436" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-25V-10%-X7R-WE" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-16503" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-16V-10%-X7R-WE" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-16507" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-50V-10%-X7R-WE" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-16523" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2515,6 +2746,152 @@ Standard 0402 sized pads with cathode pin indicator.
 </deviceset>
 </devicesets>
 </library>
+<library name="JtagConnector">
+<packages>
+<package name="84981-6">
+<smd name="1" x="2.54" y="-3.81" dx="0.6096" dy="1.7018" layer="1"/>
+<smd name="2" x="1.54" y="-3.81" dx="0.6096" dy="1.7018" layer="1"/>
+<smd name="3" x="0.54" y="-3.81" dx="0.6096" dy="1.7018" layer="1"/>
+<smd name="4" x="-0.46" y="-3.81" dx="0.6096" dy="1.7018" layer="1"/>
+<smd name="5" x="-1.46" y="-3.81" dx="0.6096" dy="1.7018" layer="1"/>
+<smd name="6" x="-2.46" y="-3.81" dx="0.6096" dy="1.7018" layer="1"/>
+<wire x1="4.191" y1="-5.715" x2="3.429" y2="-5.715" width="0.508" layer="51" curve="-180"/>
+<wire x1="3.429" y1="-5.715" x2="4.191" y2="-5.715" width="0.508" layer="51" curve="-180"/>
+<text x="4.3888" y="-1.905" size="1.27" layer="27" ratio="6">&gt;Name</text>
+<text x="-1.6888" y="-1.905" size="1.27" layer="27" ratio="6">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CONN6_84981-6_2">
+<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="middle" direction="pas"/>
+<pin name="4" x="0" y="-7.62" visible="pad" length="middle" direction="pas"/>
+<pin name="5" x="0" y="-10.16" visible="pad" length="middle" direction="pas"/>
+<pin name="6" x="0" y="-12.7" visible="pad" length="middle" direction="pas"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="5.08" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="8.89" y2="0.8467" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="8.89" y2="-1.6933" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="8.89" y2="-4.2333" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="8.89" y2="-6.7733" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="8.89" y2="-9.3133" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="8.89" y2="-11.8533" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="8.89" y2="-0.8467" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="8.89" y2="-3.3867" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="8.89" y2="-5.9267" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="8.89" y2="-8.4667" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="8.89" y2="-11.0067" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="8.89" y2="-13.5467" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1646" y="5.3086" size="2.083" layer="95" ratio="6">&gt;Name</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="84981-6RE">
+<gates>
+<gate name="G$1" symbol="CONN6_84981-6_2" x="0" y="12.7"/>
+</gates>
+<devices>
+<device name="" package="84981-6">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="B4B-ZR-SM4-TFT_LF__SN_">
+<packages>
+<package name="JST_B4B-ZR-SM4-TFT(LF)(SN)">
+<wire x1="4.5" y1="-1.85" x2="-4.5" y2="-1.85" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-1.85" x2="-4.5" y2="1.85" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="1.85" x2="4.5" y2="1.85" width="0.127" layer="51"/>
+<wire x1="4.5" y1="1.85" x2="4.5" y2="-1.85" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="1.85" x2="4.5" y2="1.85" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.4" x2="4.5" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.85" x2="3" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.4" x2="-4.5" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.85" x2="-3" y2="-1.85" width="0.127" layer="21"/>
+<circle x="-3.331" y="-2.3" radius="0.1" width="0.2" layer="21"/>
+<circle x="-3.331" y="-2.3" radius="0.1" width="0.2" layer="51"/>
+<wire x1="5.3" y1="-4.1" x2="-5.3" y2="-4.1" width="0.05" layer="39"/>
+<wire x1="-5.3" y1="-4.1" x2="-5.3" y2="2.1" width="0.05" layer="39"/>
+<wire x1="-5.3" y1="2.1" x2="5.3" y2="2.1" width="0.05" layer="39"/>
+<wire x1="5.3" y1="2.1" x2="5.3" y2="-4.1" width="0.05" layer="39"/>
+<text x="-4.881" y="2.565" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.881" y="-5.635" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="S1" x="4.3" y="0.1" dx="1.5" dy="2.3" layer="1" rot="R180"/>
+<smd name="S2" x="-4.3" y="0.1" dx="1.5" dy="2.3" layer="1" rot="R180"/>
+<smd name="4" x="2.25" y="-2" dx="0.7" dy="3.7" layer="1" rot="R180"/>
+<smd name="3" x="0.75" y="-2" dx="0.7" dy="3.7" layer="1" rot="R180"/>
+<smd name="2" x="-0.75" y="-2" dx="0.7" dy="3.7" layer="1" rot="R180"/>
+<smd name="1" x="-2.25" y="-2" dx="0.7" dy="3.7" layer="1" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="B4B-ZR-SM4-TFT(LF)(SN)">
+<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="-5.08" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-10.16" y="7.62" length="middle" direction="pas"/>
+<pin name="2" x="-10.16" y="5.08" length="middle" direction="pas"/>
+<pin name="3" x="-10.16" y="2.54" length="middle" direction="pas"/>
+<pin name="4" x="-10.16" y="0" length="middle" direction="pas"/>
+<pin name="SHIELD" x="-10.16" y="-5.08" length="middle" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="B4B-ZR-SM4-TFT(LF)(SN)" prefix="J">
+<description>ZH Series 4 Position 1.5 mm Pitch Top Entry Surface Mount Shrouded Header   &lt;a href="https://pricing.snapeda.com/parts/B4B-ZR-SM4-TFT%28LF%29%28SN%29/JST%20Sales/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="B4B-ZR-SM4-TFT(LF)(SN)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST_B4B-ZR-SM4-TFT(LF)(SN)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/B4B-ZR-SM4-TFT(LF)(SN)/JST+Sales+America+Inc./view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value=" Connector Header Surface Mount 4 position 0.059 (1.50mm) "/>
+<attribute name="MF" value="JST Sales"/>
+<attribute name="MP" value="B4B-ZR-SM4-TFT(LF)(SN)"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B4B-ZR-SM4-TFT(LF)(SN)/JST+Sales+America+Inc./view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2572,6 +2949,20 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="R7" library="SparkFun-Resistors" deviceset="1KOHM" device="-0402T-1/16W-1%" value="1k"/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="DNP" library="JtagConnector" deviceset="84981-6RE" device=""/>
+<part name="J3" library="B4B-ZR-SM4-TFT_LF__SN_" deviceset="B4B-ZR-SM4-TFT(LF)(SN)" device=""/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -2587,20 +2978,20 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="363.22" y1="45.72" x2="281.94" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="281.94" y1="45.72" x2="281.94" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
 <text x="281.94" y="43.18" size="1.778" layer="97">USB TypeC</text>
-<wire x1="231.14" y1="144.78" x2="231.14" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="231.14" y1="99.06" x2="256.54" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="256.54" y1="99.06" x2="256.54" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="256.54" y1="144.78" x2="231.14" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<text x="231.14" y="96.52" size="1.778" layer="97">JLink Debugger</text>
+<wire x1="215.9" y1="144.78" x2="215.9" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="215.9" y1="99.06" x2="248.92" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="248.92" y1="99.06" x2="248.92" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="248.92" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
+<text x="215.9" y="96.52" size="1.778" layer="97">JLink Debugger</text>
 <wire x1="213.36" y1="91.44" x2="213.36" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="213.36" y1="45.72" x2="279.4" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="279.4" y1="45.72" x2="279.4" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="279.4" y1="91.44" x2="213.36" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
 <text x="236.22" y="43.18" size="1.778" layer="97">RESET SWITCH</text>
 <wire x1="162.56" y1="91.44" x2="162.56" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="162.56" y1="45.72" x2="205.74" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="205.74" y1="45.72" x2="205.74" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="205.74" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="162.56" y1="45.72" x2="210.82" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="210.82" y1="45.72" x2="210.82" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="210.82" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
 <text x="162.56" y="43.18" size="1.778" layer="97">LIPO</text>
 <text x="314.96" y="223.52" size="1.778" layer="97">Place 10uH for dc dc</text>
 <wire x1="22.86" y1="101.6" x2="22.86" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
@@ -2615,11 +3006,16 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="22.86" y1="109.22" x2="22.86" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
 <text x="22.86" y="106.68" size="1.778" layer="97">LIPO CHARGING</text>
 <text x="35.56" y="119.38" size="1.778" layer="97">1000/200mAh</text>
-<wire x1="200.66" y1="144.78" x2="200.66" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="200.66" y1="99.06" x2="228.6" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="228.6" y1="144.78" x2="200.66" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<text x="200.66" y="96.52" size="1.778" layer="97">I2C Connector</text>
-<wire x1="228.6" y1="99.06" x2="228.6" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="162.56" y1="144.78" x2="162.56" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="162.56" y1="99.06" x2="213.36" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="213.36" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
+<text x="162.56" y="96.52" size="1.778" layer="97">I2C Connector</text>
+<wire x1="213.36" y1="99.06" x2="213.36" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="22.86" y1="241.3" x2="132.08" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="22.86" y1="180.34" x2="22.86" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="132.08" y1="241.3" x2="132.08" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="132.08" y1="180.34" x2="22.86" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
+<text x="22.86" y="177.8" size="1.778" layer="97">CAPS</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -2741,11 +3137,11 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="NAME" x="51.816" y="55.499" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="51.816" y="52.959" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="248.92" y="137.16" smashed="yes">
-<attribute name="VALUE" x="248.92" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="231.14" y="137.16" smashed="yes">
+<attribute name="VALUE" x="231.14" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND12" gate="1" x="248.92" y="114.3" smashed="yes">
-<attribute name="VALUE" x="246.38" y="111.76" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="231.14" y="106.68" smashed="yes">
+<attribute name="VALUE" x="228.6" y="104.14" size="1.778" layer="96"/>
 </instance>
 <instance part="U3" gate="G$1" x="86.36" y="134.62" smashed="yes">
 <attribute name="NAME" x="73.66" y="143.24" size="2.0828" layer="95" ratio="10" rot="SR0"/>
@@ -2783,11 +3179,58 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="NAME" x="68.58" y="148.844" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="68.58" y="145.796" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="220.98" y="137.16" smashed="yes">
-<attribute name="VALUE" x="220.98" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY5" gate="G$1" x="180.34" y="137.16" smashed="yes">
+<attribute name="VALUE" x="180.34" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND17" gate="1" x="220.98" y="109.22" smashed="yes">
-<attribute name="VALUE" x="218.44" y="106.68" size="1.778" layer="96"/>
+<instance part="GND17" gate="1" x="180.34" y="106.68" smashed="yes">
+<attribute name="VALUE" x="177.8" y="104.14" size="1.778" layer="96"/>
+</instance>
+<instance part="GND18" gate="1" x="193.04" y="50.8" smashed="yes">
+<attribute name="VALUE" x="190.5" y="48.26" size="1.778" layer="96"/>
+</instance>
+<instance part="GND19" gate="1" x="55.88" y="195.58" smashed="yes">
+<attribute name="VALUE" x="53.34" y="193.04" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="55.88" y="218.44" smashed="yes">
+<attribute name="VALUE" x="55.88" y="221.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="GND20" gate="1" x="73.66" y="195.58" smashed="yes">
+<attribute name="VALUE" x="71.12" y="193.04" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY7" gate="G$1" x="73.66" y="218.44" smashed="yes">
+<attribute name="VALUE" x="73.66" y="221.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="GND21" gate="1" x="93.98" y="195.58" smashed="yes">
+<attribute name="VALUE" x="91.44" y="193.04" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="93.98" y="218.44" smashed="yes">
+<attribute name="VALUE" x="93.98" y="221.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="DNP" gate="G$1" x="233.68" y="132.08" smashed="yes">
+<attribute name="NAME" x="237.8446" y="134.8486" size="2.083" layer="95" ratio="6"/>
+</instance>
+<instance part="J3" gate="G$1" x="195.58" y="124.46" smashed="yes">
+<attribute name="NAME" x="190.5" y="135.255" size="1.778" layer="95"/>
+<attribute name="VALUE" x="190.5" y="114.3" size="1.778" layer="96"/>
+</instance>
+<instance part="GND22" gate="1" x="35.56" y="195.58" smashed="yes">
+<attribute name="VALUE" x="33.02" y="193.04" size="1.778" layer="96"/>
+</instance>
+<instance part="C5" gate="G$1" x="55.88" y="208.28" smashed="yes">
+<attribute name="NAME" x="57.404" y="211.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="57.404" y="206.121" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C6" gate="G$1" x="35.56" y="208.28" smashed="yes">
+<attribute name="NAME" x="37.084" y="211.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="37.084" y="206.121" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C7" gate="G$1" x="73.66" y="208.28" smashed="yes">
+<attribute name="NAME" x="75.184" y="211.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="75.184" y="206.121" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C8" gate="G$1" x="93.98" y="208.28" smashed="yes">
+<attribute name="NAME" x="95.504" y="211.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="95.504" y="206.121" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -2857,7 +3300,13 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="248.92" y1="121.92" x2="248.92" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="DNP" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="129.54" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="129.54" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="DNP" gate="G$1" pin="6"/>
+<wire x1="231.14" y1="119.38" x2="231.14" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
+<junction x="231.14" y="119.38"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="63.5" x2="220.98" y2="53.34" width="0.1524" layer="91"/>
@@ -2882,7 +3331,33 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="220.98" y1="119.38" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="124.46" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="124.46" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="193.04" y1="68.58" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="55.88" y1="205.74" x2="55.88" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="73.66" y1="205.74" x2="73.66" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="93.98" y1="205.74" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="35.56" y1="205.74" x2="35.56" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -2918,6 +3393,11 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="43.18" y1="147.32" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
 <junction x="43.18" y="147.32"/>
 <pinref part="R7" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="35.56" y1="213.36" x2="35.56" y2="220.98" width="0.1524" layer="91"/>
+<label x="35.56" y="220.98" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="USBD+" class="0">
@@ -2986,20 +3466,33 @@ Standard 0402 sized pads with cathode pin indicator.
 <junction x="254" y="60.96"/>
 </segment>
 <segment>
-<wire x1="246.38" y1="124.46" x2="243.84" y2="124.46" width="0.1524" layer="91"/>
-<label x="243.84" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="228.6" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="DNP" gate="G$1" pin="5"/>
+<wire x1="233.68" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
-<wire x1="218.44" y1="127" x2="213.36" y2="127" width="0.1524" layer="91"/>
-<label x="213.36" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="175.26" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<label x="266.7" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="266.7" y1="139.7" x2="276.86" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="P0.25"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
-<wire x1="218.44" y1="124.46" x2="213.36" y2="124.46" width="0.1524" layer="91"/>
-<label x="213.36" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="175.26" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="127" x2="185.42" y2="127" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<label x="266.7" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="266.7" y1="137.16" x2="276.86" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="P0.26"/>
 </segment>
 </net>
 <net name="SWDCLK" class="0">
@@ -3009,8 +3502,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <label x="337.82" y="193.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="246.38" y1="127" x2="243.84" y2="127" width="0.1524" layer="91"/>
-<label x="243.84" y="127" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<label x="228.6" y="127" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="DNP" gate="G$1" pin="3"/>
+<wire x1="233.68" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -3020,8 +3514,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <label x="337.82" y="190.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="246.38" y1="129.54" x2="243.84" y2="129.54" width="0.1524" layer="91"/>
-<label x="243.84" y="129.54" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<label x="228.6" y="124.46" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="DNP" gate="G$1" pin="4"/>
+<wire x1="233.68" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -3105,11 +3600,30 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="248.92" y1="137.16" x2="248.92" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="137.16" x2="231.14" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="DNP" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="132.08" x2="233.68" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
-<wire x1="220.98" y1="137.16" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="137.16" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="132.08" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
+<wire x1="55.88" y1="218.44" x2="55.88" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
+<wire x1="73.66" y1="218.44" x2="73.66" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
+<wire x1="93.98" y1="218.44" x2="93.98" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$5" class="0">
