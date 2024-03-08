@@ -3478,9 +3478,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="J3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<label x="266.7" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="266.7" y1="139.7" x2="276.86" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="P0.25"/>
+<label x="266.7" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="P0.27"/>
+<wire x1="266.7" y1="134.62" x2="276.86" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
@@ -3694,6 +3694,14 @@ Standard 0402 sized pads with cathode pin indicator.
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,332.74,205.74,U1,VDDH,3.3V,,,"/>
+<approved hash="104,1,332.74,208.28,U1,DCCH,N$5,,,"/>
+<approved hash="104,1,332.74,203.2,U1,VDD,3.3V,,,"/>
+<approved hash="104,1,73.66,66.04,U2,VIN,N$6,,,"/>
+<approved hash="104,1,99.06,66.04,U2,VOUT,3.3V,,,"/>
+<approved hash="104,1,104.14,132.08,U3,VSS,GND,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
