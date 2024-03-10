@@ -1366,6 +1366,51 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
+<deviceset name="22OHM" prefix="R">
+<description>&lt;h3&gt;22Ω resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402-1/10W-1%" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12427"/>
+<attribute name="VALUE" value="22Ω"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08698"/>
+<attribute name="VALUE" value="22Ω"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-1/16W-1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12427" constant="no"/>
+<attribute name="VALUE" value="22Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="S2B-ZR-SM4A-TF">
@@ -2900,6 +2945,8 @@ Standard 0402 sized pads with cathode pin indicator.
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="3" name="vcc" width="0.254" drill="0">
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Retired" deviceset="FRAME-A3" device=""/>
@@ -2963,6 +3010,10 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="C6" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="22OHM" device="-0402T-1/16W-1%" value="22Ω"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="22OHM" device="-0402T-1/16W-1%" value="22Ω"/>
+<part name="R10" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
+<part name="R11" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2978,21 +3029,21 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="363.22" y1="45.72" x2="281.94" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="281.94" y1="45.72" x2="281.94" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
 <text x="281.94" y="43.18" size="1.778" layer="97">USB TypeC</text>
-<wire x1="215.9" y1="144.78" x2="215.9" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="215.9" y1="99.06" x2="248.92" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="248.92" y1="99.06" x2="248.92" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="248.92" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<text x="215.9" y="96.52" size="1.778" layer="97">JLink Debugger</text>
-<wire x1="213.36" y1="91.44" x2="213.36" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="213.36" y1="45.72" x2="279.4" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="246.38" y1="91.44" x2="246.38" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="246.38" y1="45.72" x2="279.4" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="279.4" y1="45.72" x2="279.4" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="279.4" y1="91.44" x2="213.36" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<text x="236.22" y="43.18" size="1.778" layer="97">RESET SWITCH</text>
-<wire x1="162.56" y1="91.44" x2="162.56" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="162.56" y1="45.72" x2="210.82" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="210.82" y1="45.72" x2="210.82" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="210.82" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<text x="162.56" y="43.18" size="1.778" layer="97">LIPO</text>
+<wire x1="279.4" y1="91.44" x2="246.38" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="246.38" y="43.18" size="1.778" layer="97">JLink Debugger</text>
+<wire x1="162.56" y1="142.24" x2="162.56" y2="96.52" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="162.56" y1="96.52" x2="228.6" y2="96.52" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="228.6" y1="96.52" x2="228.6" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="228.6" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
+<text x="162.56" y="93.98" size="1.778" layer="97">RESET SWITCH</text>
+<wire x1="162.56" y1="198.12" x2="162.56" y2="149.86" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="162.56" y1="149.86" x2="215.9" y2="149.86" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="215.9" y1="149.86" x2="215.9" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="215.9" y1="198.12" x2="162.56" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
+<text x="162.56" y="147.32" size="1.778" layer="97">LIPO</text>
 <text x="314.96" y="223.52" size="1.778" layer="97">Place 10uH for dc dc</text>
 <wire x1="22.86" y1="101.6" x2="22.86" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="22.86" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
@@ -3006,15 +3057,15 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="22.86" y1="109.22" x2="22.86" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
 <text x="22.86" y="106.68" size="1.778" layer="97">LIPO CHARGING</text>
 <text x="35.56" y="119.38" size="1.778" layer="97">1000/200mAh</text>
-<wire x1="162.56" y1="144.78" x2="162.56" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="162.56" y1="99.06" x2="213.36" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="213.36" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<text x="162.56" y="96.52" size="1.778" layer="97">I2C Connector</text>
-<wire x1="213.36" y1="99.06" x2="213.36" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="22.86" y1="241.3" x2="132.08" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="162.56" y1="91.44" x2="162.56" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="162.56" y1="45.72" x2="243.84" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="243.84" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="162.56" y="43.18" size="1.778" layer="97">I2C Connector</text>
+<wire x1="243.84" y1="45.72" x2="243.84" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="22.86" y1="241.3" x2="93.98" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="22.86" y1="180.34" x2="22.86" y2="241.3" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="132.08" y1="241.3" x2="132.08" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="132.08" y1="180.34" x2="22.86" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="93.98" y1="241.3" x2="93.98" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="93.98" y1="180.34" x2="22.86" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
 <text x="22.86" y="177.8" size="1.778" layer="97">CAPS</text>
 </plain>
 <instances>
@@ -3051,19 +3102,19 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="NAME" x="354.076" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="357.124" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="S1" gate="G$1" x="246.38" y="60.96" smashed="yes">
-<attribute name="NAME" x="243.84" y="63.5" size="1.778" layer="95"/>
-<attribute name="VALUE" x="236.22" y="55.88" size="1.778" layer="96"/>
+<instance part="S1" gate="G$1" x="195.58" y="111.76" smashed="yes">
+<attribute name="NAME" x="193.04" y="114.3" size="1.778" layer="95"/>
+<attribute name="VALUE" x="185.42" y="106.68" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="236.22" y="50.8" smashed="yes">
-<attribute name="VALUE" x="233.68" y="48.26" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="185.42" y="101.6" smashed="yes">
+<attribute name="VALUE" x="182.88" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="P1" gate="G$1" x="175.26" y="71.12" smashed="yes">
-<attribute name="NAME" x="175.26" y="74.169159375" size="1.27048125" layer="95"/>
-<attribute name="VALUE" x="175.26" y="64.256590625" size="1.271" layer="96"/>
+<instance part="P1" gate="G$1" x="175.26" y="175.26" smashed="yes">
+<attribute name="NAME" x="175.26" y="178.309159375" size="1.27048125" layer="95"/>
+<attribute name="VALUE" x="175.26" y="168.396590625" size="1.271" layer="96"/>
 </instance>
-<instance part="GND6" gate="1" x="170.18" y="50.8" smashed="yes">
-<attribute name="VALUE" x="167.64" y="48.26" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="170.18" y="154.94" smashed="yes">
+<attribute name="VALUE" x="167.64" y="152.4" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="G$1" x="86.36" y="60.96" smashed="yes">
 <attribute name="NAME" x="78.69705" y="69.607609375" size="2.08946875" layer="95" ratio="10" rot="SR0"/>
@@ -3096,12 +3147,12 @@ Standard 0402 sized pads with cathode pin indicator.
 <instance part="SUPPLY2" gate="G$1" x="109.22" y="78.74" smashed="yes">
 <attribute name="VALUE" x="109.22" y="81.534" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="254" y="83.82" smashed="yes">
-<attribute name="VALUE" x="254" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY3" gate="G$1" x="203.2" y="134.62" smashed="yes">
+<attribute name="VALUE" x="203.2" y="137.414" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="R3" gate="G$1" x="254" y="73.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="252.476" y="73.66" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="255.524" y="73.66" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R3" gate="G$1" x="203.2" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="201.676" y="124.46" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="204.724" y="124.46" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="L1" gate="G$1" x="342.9" y="218.44" smashed="yes" rot="MR0">
 <attribute name="NAME" x="341.63" y="220.98" size="1.778" layer="95" font="vector" rot="MR0"/>
@@ -3137,18 +3188,18 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="NAME" x="51.816" y="55.499" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="51.816" y="52.959" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="231.14" y="137.16" smashed="yes">
-<attribute name="VALUE" x="231.14" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="261.62" y="83.82" smashed="yes">
+<attribute name="VALUE" x="261.62" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND12" gate="1" x="231.14" y="106.68" smashed="yes">
-<attribute name="VALUE" x="228.6" y="104.14" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="261.62" y="53.34" smashed="yes">
+<attribute name="VALUE" x="259.08" y="50.8" size="1.778" layer="96"/>
 </instance>
 <instance part="U3" gate="G$1" x="86.36" y="134.62" smashed="yes">
 <attribute name="NAME" x="73.66" y="143.24" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="73.66" y="123" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="GND13" gate="1" x="220.98" y="50.8" smashed="yes">
-<attribute name="VALUE" x="218.44" y="48.26" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="170.18" y="101.6" smashed="yes">
+<attribute name="VALUE" x="167.64" y="99.06" size="1.778" layer="96"/>
 </instance>
 <instance part="GND14" gate="1" x="109.22" y="116.84" smashed="yes">
 <attribute name="VALUE" x="106.68" y="114.3" size="1.778" layer="96"/>
@@ -3163,9 +3214,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="NAME" x="117.856" y="126.619" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="117.856" y="124.079" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="S2" gate="G$1" x="223.52" y="68.58" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.568" y="67.31" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="220.218" y="67.564" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+<instance part="S2" gate="G$1" x="172.72" y="119.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="175.768" y="118.11" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="169.418" y="118.364" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
 <instance part="R6" gate="G$1" x="55.88" y="124.46" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.356" y="124.46" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -3179,14 +3230,14 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="NAME" x="68.58" y="148.844" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="68.58" y="145.796" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="180.34" y="137.16" smashed="yes">
-<attribute name="VALUE" x="180.34" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY5" gate="G$1" x="210.82" y="83.82" smashed="yes">
+<attribute name="VALUE" x="210.82" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND17" gate="1" x="180.34" y="106.68" smashed="yes">
-<attribute name="VALUE" x="177.8" y="104.14" size="1.778" layer="96"/>
+<instance part="GND17" gate="1" x="210.82" y="53.34" smashed="yes">
+<attribute name="VALUE" x="208.28" y="50.8" size="1.778" layer="96"/>
 </instance>
-<instance part="GND18" gate="1" x="193.04" y="50.8" smashed="yes">
-<attribute name="VALUE" x="190.5" y="48.26" size="1.778" layer="96"/>
+<instance part="GND18" gate="1" x="193.04" y="154.94" smashed="yes">
+<attribute name="VALUE" x="190.5" y="152.4" size="1.778" layer="96"/>
 </instance>
 <instance part="GND19" gate="1" x="55.88" y="195.58" smashed="yes">
 <attribute name="VALUE" x="53.34" y="193.04" size="1.778" layer="96"/>
@@ -3194,24 +3245,24 @@ Standard 0402 sized pads with cathode pin indicator.
 <instance part="SUPPLY6" gate="G$1" x="55.88" y="218.44" smashed="yes">
 <attribute name="VALUE" x="55.88" y="221.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND20" gate="1" x="73.66" y="195.58" smashed="yes">
-<attribute name="VALUE" x="71.12" y="193.04" size="1.778" layer="96"/>
+<instance part="GND20" gate="1" x="81.28" y="195.58" smashed="yes">
+<attribute name="VALUE" x="78.74" y="193.04" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="73.66" y="218.44" smashed="yes">
-<attribute name="VALUE" x="73.66" y="221.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY7" gate="G$1" x="81.28" y="218.44" smashed="yes">
+<attribute name="VALUE" x="81.28" y="221.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND21" gate="1" x="93.98" y="195.58" smashed="yes">
-<attribute name="VALUE" x="91.44" y="193.04" size="1.778" layer="96"/>
+<instance part="GND21" gate="1" x="66.04" y="195.58" smashed="yes">
+<attribute name="VALUE" x="63.5" y="193.04" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY8" gate="G$1" x="93.98" y="218.44" smashed="yes">
-<attribute name="VALUE" x="93.98" y="221.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY8" gate="G$1" x="66.04" y="218.44" smashed="yes">
+<attribute name="VALUE" x="66.04" y="221.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="DNP" gate="G$1" x="233.68" y="132.08" smashed="yes">
-<attribute name="NAME" x="237.8446" y="134.8486" size="2.083" layer="95" ratio="6"/>
+<instance part="DNP" gate="G$1" x="264.16" y="78.74" smashed="yes">
+<attribute name="NAME" x="268.3246" y="81.5086" size="2.083" layer="95" ratio="6"/>
 </instance>
-<instance part="J3" gate="G$1" x="195.58" y="124.46" smashed="yes">
-<attribute name="NAME" x="190.5" y="135.255" size="1.778" layer="95"/>
-<attribute name="VALUE" x="190.5" y="114.3" size="1.778" layer="96"/>
+<instance part="J3" gate="G$1" x="226.06" y="71.12" smashed="yes">
+<attribute name="NAME" x="220.98" y="81.915" size="1.778" layer="95"/>
+<attribute name="VALUE" x="220.98" y="60.96" size="1.778" layer="96"/>
 </instance>
 <instance part="GND22" gate="1" x="35.56" y="195.58" smashed="yes">
 <attribute name="VALUE" x="33.02" y="193.04" size="1.778" layer="96"/>
@@ -3224,13 +3275,29 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="NAME" x="37.084" y="211.201" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="37.084" y="206.121" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C7" gate="G$1" x="73.66" y="208.28" smashed="yes">
-<attribute name="NAME" x="75.184" y="211.201" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="75.184" y="206.121" size="1.778" layer="96" font="vector"/>
+<instance part="C7" gate="G$1" x="81.28" y="208.28" smashed="yes">
+<attribute name="NAME" x="82.804" y="211.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="82.804" y="206.121" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C8" gate="G$1" x="93.98" y="208.28" smashed="yes">
-<attribute name="NAME" x="95.504" y="211.201" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="95.504" y="206.121" size="1.778" layer="96" font="vector"/>
+<instance part="C8" gate="G$1" x="66.04" y="208.28" smashed="yes">
+<attribute name="NAME" x="67.564" y="211.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="67.564" y="206.121" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="R8" gate="G$1" x="340.36" y="182.88" smashed="yes">
+<attribute name="NAME" x="337.82" y="184.404" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="342.9" y="186.436" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R9" gate="G$1" x="340.36" y="180.34" smashed="yes">
+<attribute name="NAME" x="337.82" y="176.784" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="342.9" y="178.816" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R10" gate="G$1" x="193.04" y="180.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="191.516" y="180.34" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="194.564" y="180.34" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R11" gate="G$1" x="193.04" y="165.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="191.516" y="165.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="194.564" y="165.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -3261,14 +3328,14 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="60.96" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="111.76" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="236.22" y1="60.96" x2="236.22" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="111.76" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="P1" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="68.58" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="172.72" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -3301,15 +3368,15 @@ Standard 0402 sized pads with cathode pin indicator.
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="DNP" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="129.54" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="129.54" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="76.2" x2="261.62" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="76.2" x2="261.62" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="DNP" gate="G$1" pin="6"/>
-<wire x1="231.14" y1="119.38" x2="231.14" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
-<junction x="231.14" y="119.38"/>
+<wire x1="261.62" y1="66.04" x2="261.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="66.04" x2="261.62" y2="66.04" width="0.1524" layer="91"/>
+<junction x="261.62" y="66.04"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="63.5" x2="220.98" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="114.3" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="S2" gate="G$1" pin="S"/>
 </segment>
@@ -3331,13 +3398,14 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="180.34" y1="124.46" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="124.46" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="71.12" x2="210.82" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="193.04" y1="68.58" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="160.02" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -3346,12 +3414,12 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="73.66" y1="205.74" x2="73.66" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="205.74" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="93.98" y1="205.74" x2="93.98" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="205.74" x2="66.04" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -3360,7 +3428,7 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="VBUS" class="0">
+<net name="VBUS" class="3">
 <segment>
 <pinref part="U1" gate="G$1" pin="VBUS"/>
 <wire x1="332.74" y1="200.66" x2="337.82" y2="200.66" width="0.1524" layer="91"/>
@@ -3402,9 +3470,9 @@ Standard 0402 sized pads with cathode pin indicator.
 </net>
 <net name="USBD+" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D+"/>
-<wire x1="332.74" y1="182.88" x2="337.82" y2="182.88" width="0.1524" layer="91"/>
-<label x="337.82" y="182.88" size="1.27" layer="95" xref="yes"/>
+<label x="347.98" y="182.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="347.98" y1="182.88" x2="345.44" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="299.72" y1="73.66" x2="304.8" y2="73.66" width="0.1524" layer="91"/>
@@ -3419,9 +3487,9 @@ Standard 0402 sized pads with cathode pin indicator.
 </net>
 <net name="USBD-" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="D-"/>
-<wire x1="332.74" y1="180.34" x2="337.82" y2="180.34" width="0.1524" layer="91"/>
-<label x="337.82" y="180.34" size="1.27" layer="95" xref="yes"/>
+<label x="347.98" y="180.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="347.98" y1="180.34" x2="345.44" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="299.72" y1="71.12" x2="304.8" y2="71.12" width="0.1524" layer="91"/>
@@ -3458,23 +3526,23 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="60.96" x2="254" y2="60.96" width="0.1524" layer="91"/>
-<label x="259.08" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="200.66" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
+<label x="208.28" y="111.76" size="1.27" layer="95" xref="yes"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="254" y1="60.96" x2="259.08" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="254" y1="68.58" x2="254" y2="60.96" width="0.1524" layer="91"/>
-<junction x="254" y="60.96"/>
+<wire x1="203.2" y1="111.76" x2="208.28" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="119.38" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
+<junction x="203.2" y="111.76"/>
 </segment>
 <segment>
-<label x="228.6" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="259.08" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="DNP" gate="G$1" pin="5"/>
-<wire x1="233.68" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="68.58" x2="259.08" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
-<label x="175.26" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="175.26" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
+<label x="205.74" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="205.74" y1="76.2" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -3485,8 +3553,8 @@ Standard 0402 sized pads with cathode pin indicator.
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
-<label x="175.26" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="175.26" y1="127" x2="185.42" y2="127" width="0.1524" layer="91"/>
+<label x="205.74" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="205.74" y1="73.66" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="3"/>
 </segment>
 <segment>
@@ -3502,9 +3570,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <label x="337.82" y="193.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="228.6" y="127" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<label x="259.08" y="73.66" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="DNP" gate="G$1" pin="3"/>
-<wire x1="233.68" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="73.66" x2="259.08" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -3514,16 +3582,16 @@ Standard 0402 sized pads with cathode pin indicator.
 <label x="337.82" y="190.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="228.6" y="124.46" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<label x="259.08" y="71.12" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="DNP" gate="G$1" pin="4"/>
-<wire x1="233.68" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="71.12" x2="259.08" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VBAT" class="0">
+<net name="VBAT" class="3">
 <segment>
 <pinref part="P1" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="71.12" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
-<label x="170.18" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="170.18" y1="175.26" x2="170.18" y2="187.96" width="0.1524" layer="91"/>
+<label x="170.18" y="187.96" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <label x="53.34" y="91.44" size="1.778" layer="95" rot="R90" xref="yes"/>
@@ -3540,8 +3608,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <junction x="119.38" y="137.16"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="71.12" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
-<label x="193.04" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="193.04" y1="185.42" x2="193.04" y2="187.96" width="0.1524" layer="91"/>
+<label x="193.04" y="187.96" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3569,11 +3638,11 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
+<net name="3.3V" class="3">
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="254" y1="83.82" x2="254" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="134.62" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
@@ -3600,14 +3669,14 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="231.14" y1="137.16" x2="231.14" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="83.82" x2="261.62" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="DNP" gate="G$1" pin="1"/>
-<wire x1="231.14" y1="132.08" x2="233.68" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="78.74" x2="264.16" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
-<wire x1="180.34" y1="137.16" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="132.08" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="83.82" x2="210.82" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="78.74" x2="210.82" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -3617,12 +3686,12 @@ Standard 0402 sized pads with cathode pin indicator.
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
-<wire x1="73.66" y1="218.44" x2="73.66" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="218.44" x2="81.28" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
-<wire x1="93.98" y1="218.44" x2="93.98" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="218.44" x2="66.04" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -3662,8 +3731,8 @@ Standard 0402 sized pads with cathode pin indicator.
 <label x="71.12" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="223.52" y1="71.12" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
-<label x="223.52" y="76.2" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="172.72" y1="121.92" x2="172.72" y2="127" width="0.1524" layer="91"/>
+<label x="172.72" y="127" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="S2" gate="G$1" pin="P"/>
 </segment>
 </net>
@@ -3689,6 +3758,36 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="73.66" y1="147.32" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="D+"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="332.74" y1="182.88" x2="335.28" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="D-"/>
+<wire x1="332.74" y1="180.34" x2="335.28" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="VDIV" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P0.29/AIN5"/>
+<wire x1="276.86" y1="129.54" x2="266.7" y2="129.54" width="0.1524" layer="91"/>
+<label x="266.7" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="193.04" y1="172.72" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
+<label x="203.2" y="172.72" size="1.778" layer="95" xref="yes"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="175.26" x2="193.04" y2="172.72" width="0.1524" layer="91"/>
+<junction x="193.04" y="172.72"/>
+<wire x1="193.04" y1="172.72" x2="193.04" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
