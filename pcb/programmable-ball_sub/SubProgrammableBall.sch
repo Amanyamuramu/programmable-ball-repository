@@ -7336,6 +7336,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="Power" width="0.254" drill="0">
+</class>
+<class number="2" name="GND" width="0.381" drill="0">
+</class>
 </classes>
 <parts>
 <part name="+3V1" library="SubProgrammableBall" deviceset="+3V3" device=""/>
@@ -7434,7 +7438,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="2">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="99.06" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
@@ -7462,7 +7466,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="CON1" gate="A" pin="4"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -7558,6 +7562,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,99.06,68.58,U2,VDD_IO,+3V3,,,"/>
+<approved hash="104,1,99.06,71.12,U2,VDD,N$1,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
