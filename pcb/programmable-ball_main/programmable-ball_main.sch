@@ -2981,7 +2981,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U3" library="MCP73832T-2ACI_OT" deviceset="MCP73832T-2ACI/OT" device=""/>
@@ -2989,7 +2988,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
 <part name="S2" library="CAS_120TA" deviceset="CASA-120TA-PB" device=""/>
 <part name="R6" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0402T-1/16W-1%" value="4.7k"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-RED" device="_0402" value="RED"/>
@@ -3006,14 +3004,16 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="DNP" library="JtagConnector" deviceset="84981-6RE" device=""/>
 <part name="J3" library="B4B-ZR-SM4-TFT_LF__SN_" deviceset="B4B-ZR-SM4-TFT(LF)(SN)" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="22OHM" device="-0402T-1/16W-1%" value="22Ω"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="22OHM" device="-0402T-1/16W-1%" value="22Ω"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -3184,10 +3184,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="NAME" x="36.576" y="58.42" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="39.624" y="58.42" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="C3" gate="G$1" x="53.34" y="58.42" smashed="yes" rot="R180">
-<attribute name="NAME" x="51.816" y="55.499" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="51.816" y="52.959" size="1.778" layer="96" font="vector" rot="R180"/>
-</instance>
 <instance part="SUPPLY4" gate="G$1" x="261.62" y="83.82" smashed="yes">
 <attribute name="VALUE" x="261.62" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
@@ -3209,10 +3205,6 @@ Standard 0402 sized pads with cathode pin indicator.
 </instance>
 <instance part="GND16" gate="1" x="119.38" y="116.84" smashed="yes">
 <attribute name="VALUE" x="116.84" y="114.3" size="1.778" layer="96"/>
-</instance>
-<instance part="C4" gate="G$1" x="119.38" y="129.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="117.856" y="126.619" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="117.856" y="124.079" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="S2" gate="G$1" x="172.72" y="119.38" smashed="yes" rot="R270">
 <attribute name="NAME" x="175.768" y="118.11" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
@@ -3267,14 +3259,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <instance part="GND22" gate="1" x="35.56" y="195.58" smashed="yes">
 <attribute name="VALUE" x="33.02" y="193.04" size="1.778" layer="96"/>
 </instance>
-<instance part="C5" gate="G$1" x="55.88" y="208.28" smashed="yes">
-<attribute name="NAME" x="57.404" y="211.201" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="57.404" y="206.121" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="C6" gate="G$1" x="35.56" y="208.28" smashed="yes">
-<attribute name="NAME" x="37.084" y="211.201" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="37.084" y="206.121" size="1.778" layer="96" font="vector"/>
-</instance>
 <instance part="C7" gate="G$1" x="81.28" y="208.28" smashed="yes">
 <attribute name="NAME" x="82.804" y="211.201" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="82.804" y="206.121" size="1.778" layer="96" font="vector"/>
@@ -3298,6 +3282,22 @@ Standard 0402 sized pads with cathode pin indicator.
 <instance part="R11" gate="G$1" x="193.04" y="165.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="191.516" y="165.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="194.564" y="165.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="C3" gate="G$1" x="53.34" y="55.88" smashed="yes">
+<attribute name="NAME" x="54.864" y="58.801" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="54.864" y="53.721" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C4" gate="G$1" x="119.38" y="127" smashed="yes">
+<attribute name="NAME" x="120.904" y="129.921" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="120.904" y="124.841" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C5" gate="G$1" x="55.88" y="208.28" smashed="yes">
+<attribute name="NAME" x="57.404" y="211.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="57.404" y="206.121" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C6" gate="G$1" x="35.56" y="208.28" smashed="yes">
+<attribute name="NAME" x="37.084" y="211.201" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="37.084" y="206.121" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -3361,9 +3361,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="53.34" y1="53.34" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -3387,9 +3387,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="109.22" y1="132.08" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="119.38" y1="124.46" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -3603,9 +3603,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="U3" gate="G$1" pin="VBAT"/>
 <wire x1="104.14" y1="137.16" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="137.16" x2="119.38" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="137.16" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
 <junction x="119.38" y="137.16"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="193.04" y1="185.42" x2="193.04" y2="187.96" width="0.1524" layer="91"/>
@@ -3713,11 +3713,11 @@ Standard 0402 sized pads with cathode pin indicator.
 <junction x="60.96" y="66.04"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="53.34" y1="71.12" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="66.04" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
 <junction x="53.34" y="66.04"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="48.26" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="EN" class="0">
