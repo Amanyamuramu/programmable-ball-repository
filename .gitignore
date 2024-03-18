@@ -1,6 +1,8 @@
+# Ignore Directory
 fw/sandbox/VibrationCheck/
 pcb/Programmable-ball_lib
-
+pcb/ref
+pcb/programmable-ball_main/dxf
 
 # Ignore list for Eagle, a PCB layout tool
 
@@ -11,3 +13,9 @@ pcb/Programmable-ball_lib
 *.b$?
 *.s$?
 *.l$?
+
+# Autorouter files
+*.pro
+*.job
+
+.vscode/
