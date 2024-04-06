@@ -19,3 +19,6 @@ pcb/programmable-ball_main/dxf
 *.job
 
 .vscode/
+
+# Ignore ideaMaker working file
+*.idea
