@@ -56,12 +56,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const decodedValue = decoder.decode(value);
         console.log('Received:', decodedValue);
         document.getElementById('receivedData').textContent = `Received: ${decodedValue}`;
-        if (decodedValue === "1") {
-            // document.getElementById('audioPlayer').play().catch(error => console.error('Playback failed', error));
-            playRandomMp3();
-        } else if (decodedValue === "0") {
-            document.getElementById('audioPlayer').pause();
-            document.getElementById('audioPlayer').currentTime = 0; // オーディオを最初から再開するために時間をリセット
+
+        // fixme : valueではなく、単純な文字列を送信して決定するようにする
+        const command = decodedValue.charAt(0); // 先頭の文字を取得
+        const data = decodedValue.slice(1); //先頭の文字以外
+
+        switch (command) {
+            case 'M': // 'A'が先頭にある場合、MP3を再生
+                if (data === "1") {
+                    // document.getElementById('audioPlayer').play().catch(error => console.error('Playback failed', error));
+                    playRandomMp3();
+                } else if (data === "0") {
+                    document.getElementById('audioPlayer').pause();
+                    document.getElementById('audioPlayer').currentTime = 0;
+                }
+                break;
+            case 'B': //バッテリ残量を表示
+                updateBatteryLevel(data);
+                break;
+            default:
+                console.log('No special command detected.');
         }
     }
     function playRandomMp3() {
@@ -70,5 +84,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         audioPlayer.src = mp3Files[randomIndex];
         audioPlayer.play().catch(error => console.error('Playback failed', error));
     }
-
+    function updateBatteryLevel(level) {
+        document.getElementById('batteryLevel').textContent = `${level}%`;
+    }
 });
