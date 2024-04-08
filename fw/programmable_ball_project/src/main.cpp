@@ -64,9 +64,9 @@ void loop()
     Serial.println(per);
 
     char checkType[2] = "B";
-    char percentage [2] = "%";
+    // char percentage [2] = "%";
     char myChar[20];
-    sprintf(myChar, "%s %2.2f %s", checkType,per, percentage); 
+    sprintf(myChar, "%s %2.2f", checkType,per); 
     ble.write(myChar);
     timeVoltageCheck = millis();
   }

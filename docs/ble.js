@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 break;
             case 'B': //バッテリ残量を表示
                 updateBatteryLevel(data);
+                console.log('battery状態');
                 break;
             default:
                 console.log('No special command detected.');
@@ -86,5 +87,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
     function updateBatteryLevel(level) {
         document.getElementById('batteryLevel').textContent = `${level}%`;
+        console.log(level);
     }
 });
