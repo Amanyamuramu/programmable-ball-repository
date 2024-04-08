@@ -18,6 +18,7 @@ body {
     border: 1px solid #777;
     padding: 10px;
     margin-top: 20px;
+    margin-bottom: 30px;
     width: 100%;
     max-width: 600px;
 }
@@ -26,4 +27,36 @@ body {
     padding: 7px 18px;
     border-radius: 7px;
     border: 5px solid #c0c0c0;
+}
+
+/* battery appearance */
+.battery {
+    position: relative;
+    width: 150px; /* バッテリーの幅を設定 */
+    height: 40px; /* バッテリーの高さを設定 */
+    border: 2px solid #333; /* バッテリーの枠を設定 */
+    border-radius: 4px; /* 角の丸みを設定 */
+    background-color: #fff; /* バッテリーの背景色を設定 */
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* 影を追加 */
+}
+
+.battery::after {
+    content: '';
+    position: absolute;
+    top: 10px; /* 上部からの位置 */
+    right: -6px; /* 右端からの位置 */
+    width: 8px; /* バッテリーの突起部分の幅 */
+    height: 20px; /* バッテリーの突起部分の高さ */
+    background-color: #333; /* 突起部分の背景色 */
+    border-radius: 2px; /* 突起部分の角の丸み */
+}
+
+.battery-level {
+    height: 100%; /* 内部バーの高さを親と同じに */
+    background-color: #4CAF50; /* 内部バーの背景色 */
+    width: 0%; /* 初期状態の内部バーの幅 */
+    line-height: 40px; /* テキストの行の高さをバッテリーと同じに */
+    text-align: center; /* テキストを中央寄せ */
+    color: white; /* テキストの色 */
+    transition: width 0.5s ease; /* 幅の変化にアニメーションを設定 */
 }
