@@ -16,8 +16,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef _VARIANT_TOHO_OFURO_MONITOR_
-#define _VARIANT_TOHO_OFURO_MONITOR_
+#ifndef _VARIANT_PROGRAMMABLE_BALL_
+#define _VARIANT_PROGRAMMABLE_BALL_
 
 /** Master clock frequency */
 #define VARIANT_MCK       (64000000ul)
