@@ -87,6 +87,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
     function updateBatteryLevel(level) {
         document.getElementById('batteryLevel').textContent = `${level}%`;
-        console.log(level);
+        const percentage = parseInt(level); // パーセント値を整数に変換
+        const batteryLevel = document.getElementById('batteryLevel');
+        batteryLevel.style.width = `${percentage}%`; // 幅をパーセンテージに設定
+        batteryLevel.textContent = `${percentage}%`; // テキスト内容を更新
     }
 });
