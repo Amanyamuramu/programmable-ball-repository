@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const data = decodedValue.slice(1); //先頭の文字以外
 
         switch (command) {
-            case 'M': // 'A'が先頭にある場合、MP3を再生
+            case 'M': // 'M'が先頭にある場合、MP3を再生
                 if (data === "1") {
                     // document.getElementById('audioPlayer').play().catch(error => console.error('Playback failed', error));
                     playRandomMp3();//ランダムに再生
