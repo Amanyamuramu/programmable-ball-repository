@@ -12,8 +12,9 @@ LSM6DSO myIMU; //Default constructor is I2C, addr 0x6B
 
 float prev_rms = 0;
 unsigned long previousMillis = 0;
-bool isButton = false;
 float prev_acc_data[3] = {0};
+
+unsigned long timeVoltageCheck = millis();
 
 //プロトタイプ宣言
 bool checkButtonRelease(const int pin);
@@ -23,38 +24,27 @@ float getBatteryVoltage();
 float batteryPercentage(float voltage);
 void scanI2CDevices();
 
-
 void setup()
 {
   Serial.begin(115200);
   ble.init();
-  
   analogReadResolution(10);
   pinMode(PIN_AIN5, INPUT);
-
   // pinMode(PIN_WIRE_SCL, INPUT_PULLUP);
   // pinMode(PIN_WIRE_SDA, INPUT_PULLUP);
-
   Wire.begin();
-
-  //スキャンの開始
-  scanI2CDevices();
-
-  //LSM6DSOのセットアップ
+  //scanI2CDevices();
   delay(1000);
+  //LSM6DSOのセットアップ
   if( myIMU.begin(0x6B))//0x6B default, 0x6A(sa0 is gnd)
     Serial.println("Ready.");
   else { 
     Serial.println("Could not connect to IMU.");
     Serial.println("Freezing");
   }
-
   if( myIMU.initialize(BASIC_SETTINGS) )
     Serial.println("Loaded Settings.");
-
 }
-
-unsigned long timeVoltageCheck = millis();
 
 void loop()
 {
@@ -72,29 +62,10 @@ void loop()
   }
 
   //LSM6DSOの出力確認
-  /*
-  Serial.print("\nAccelerometer:\n");
-  Serial.print(" X = ");
   Serial.println(myIMU.readFloatAccelX(), 3);
-  Serial.print(" Y = ");
   Serial.println(myIMU.readFloatAccelY(), 3);
-  Serial.print(" Z = ");
   Serial.println(myIMU.readFloatAccelZ(), 3);
 
-  Serial.print("\nGyroscope:\n");
-  Serial.print(" X = ");
-  Serial.println(myIMU.readFloatGyroX(), 3);
-  Serial.print(" Y = ");
-  Serial.println(myIMU.readFloatGyroY(), 3);
-  Serial.print(" Z = ");
-  Serial.println(myIMU.readFloatGyroZ(), 3);
-
-  Serial.print("\nThermometer:\n");
-  Serial.print(" Degrees F = ");
-  Serial.println(myIMU.readTempF(), 3);
-  */
-
- /*
   float rms = accDiff();
   if(rms>=1.0){
     unsigned long currentMillis = millis();
@@ -105,72 +76,33 @@ void loop()
       Serial.println("send signal for play mp3");
     }
   }
-  */
-
- delay(500);
 }
 
-void scanI2CDevices() {
-  Serial.println("Scanning for I2C devices...");
-  byte count = 0;
-
-  while (count == 0) {
-    for (byte i = 1; i < 127; i++) {
-      Wire.beginTransmission(i);
-      if (Wire.endTransmission() == 0) {
-        Serial.print("I2C device found at address 0x");
-        if (i < 16) Serial.print("0");
-        Serial.print(i, HEX);
-        Serial.println(" !");
-        count++;
-      }
-    }
-
-    if (count == 0) {
-      Serial.println("No I2C devices found. Retry");
-      delay(1000);
-    } else {
-      Serial.print("Found ");
-      Serial.print(count, DEC);
-      Serial.println(" device(s).");
-    }
-  }
-}
-
-
-/*
 void accInit(){
-  acc.setup();                           // IMUのセットアップ
-  acc.getIMU();                          // IMUからデータを取得
-  float *imu_data = acc.getData();       // 取得したデータへのポインタを取得
+  float imu_data[3] = {myIMU.readFloatAccelX(), myIMU.readFloatAccelY(), myIMU.readFloatAccelZ()};
   for(uint8_t i = 0; i < 3; i++){
     prev_acc_data[i] = imu_data[i];
-    Serial.print(imu_data[i]);Serial.print(", ");
+    Serial.print(imu_data[i]); Serial.print(", ");
   }
-  prev_rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2))/3);
+  prev_rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2)) / 3);
+  Serial.print("Initial RMS: ");
+  Serial.println(prev_rms);
 }
-*/
 
-/*
 float accDiff(){
-  acc.getIMU(); 
-  float *imu_data = acc.getData();
+  float imu_data[3] = {myIMU.readFloatAccelX(), myIMU.readFloatAccelY(), myIMU.readFloatAccelZ()};
   float lpf[3] = {0};
   float hpf[3] = {0};
+
   for (uint8_t i = 0; i < 3; i++){
-    lpf[i] = filter.applyLowPassFilter(imu_data[i],prev_acc_data[i]);
+    lpf[i] = filter.applyLowPassFilter(imu_data[i], prev_acc_data[i]);
     prev_acc_data[i] = imu_data[i];
-    hpf[i] = filter.applyHighPassFilter(imu_data[i],lpf[i]);
-
-    // Serial.print("\nAccelerometer:\n"+i);
-    // Serial.print(imu_data[i]);
-
+    hpf[i] = filter.applyHighPassFilter(imu_data[i], lpf[i]);
   }
-  float rms = sqrt((pow(hpf[0], 2) + pow(hpf[1], 2) + pow(hpf[2], 2))/3);
-  // Serial.println(rms);
+
+  float rms = sqrt((pow(hpf[0], 2) + pow(hpf[1], 2) + pow(hpf[2], 2)) / 3);
   return rms;
 }
-*/
 
 // VBAT
 float getBatteryVoltage()
