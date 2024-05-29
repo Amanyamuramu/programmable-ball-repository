@@ -48,23 +48,11 @@ void setup()
 
 void loop()
 {
-  //電圧値の更新
-  if(millis() - timeVoltageCheck > 1000){
-    float vol = getBatteryVoltage();
-    float per = batteryPercentage(vol);
-    Serial.println(per);
-
-    char checkType[2] = "B";
-    char myChar[20];
-    sprintf(myChar, "%s %2.2f", checkType,per); 
-    ble.write(myChar);
-    timeVoltageCheck = millis();
-  }
-
-  //LSM6DSOの出力確認
+  /*LSM6DSOの出力確認
   Serial.println(myIMU.readFloatAccelX(), 3);
   Serial.println(myIMU.readFloatAccelY(), 3);
   Serial.println(myIMU.readFloatAccelZ(), 3);
+  */
 
   float rms = accDiff();
   if(rms>=1.0){
@@ -75,6 +63,22 @@ void loop()
       previousMillis = millis();
       Serial.println("send signal for play mp3");
     }
+  }
+
+    //電圧値の更新(rmsの確認)
+  if(millis() - timeVoltageCheck > 1000){
+    float vol = getBatteryVoltage();
+    float per = batteryPercentage(vol);
+    Serial.println(per);
+
+    char checkType[2] = "B";
+    char myChar[20];
+    sprintf(myChar, "%s %2.2f", checkType,per); 
+    ble.write(myChar);
+    timeVoltageCheck = millis();
+
+    Serial.print("RMS: ");
+    Serial.println(rms, 3); // RMSの値を表示
   }
 }
 
