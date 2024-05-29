@@ -118,7 +118,7 @@ float getBatteryVoltage()
   return voltage / voltageDividerRatio; // 分圧比でスケーリング
 }
 
-  float batteryPercentage(float voltage) {
+float batteryPercentage(float voltage) {
   const float fullChargeVoltage = 4.2;  // バッテリーのフルチャージ電圧
   const float dischargeVoltage = 3.0;  // 安全な放電限界電圧
 
