@@ -6,20 +6,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // mp3ファイルのリスト
     const mp3Files = [
-        "mp3/1_metal.mp3",
-        "mp3/2_wood.mp3",
-        "mp3/3_water.mp3",
-        "mp3/4_pingpong.mp3",
-        "mp3/else1.mp3",
-        "mp3/else2.mp3",
-        "mp3/else3.mp3",
-        /*
+        // "mp3/1_metal.mp3",
+        // "mp3/2_wood.mp3",
+        // "mp3/3_water.mp3",
+        // "mp3/4_pingpong.mp3",
+        // "mp3/else1.mp3",
+        // "mp3/else2.mp3",
+        // "mp3/else3.mp3",
+        // /*
          "mp3/hunVoice.mp3",
          "mp3/painVoice.mp3",
          "mp3/quesVoice.mp3",
          "mp3/replyVoice.mp3",
          "mp3/yaaVoice.mp3",
-        */
+        // */
     ];
 
     document.getElementById('connect').addEventListener('click', function() {
@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             case 'M': // 'A'が先頭にある場合、MP3を再生
                 if (data === "1") {
                     // document.getElementById('audioPlayer').play().catch(error => console.error('Playback failed', error));
-                    // playRandomMp3();//ランダムに再生
-                    playSequentialMp3();//順番に再生
+                    playRandomMp3();//ランダムに再生
+                    // playSequentialMp3();//順番に再生
                 } else if (data === "0") {
                     document.getElementById('audioPlayer').pause();
                     document.getElementById('audioPlayer').currentTime = 0;
