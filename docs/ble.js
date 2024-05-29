@@ -2,14 +2,24 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     let rxCharacteristic;
     let txCharacteristic;
+    let currentMp3Index = 0; //mp3のインデックス
 
     // mp3ファイルのリスト
     const mp3Files = [
-        "mp3/hunVoice.mp3",
-        "mp3/painVoice.mp3",
-        "mp3/quesVoice.mp3",
-        "mp3/replyVoice.mp3",
-        "mp3/yaaVoice.mp3",
+        "/mp3/1_metal.mp3",
+        "/mp3/2_wood.mp3",
+        "/mp3/3_water.mp3",
+        "/mp3/4_pingpong.mp3",
+        "/mp3/else1.mp3",
+        "/mp3/else2.mp3",
+        "/mp3/else3.mp3",
+        /*
+         "mp3/hunVoice.mp3",
+         "mp3/painVoice.mp3",
+         "mp3/quesVoice.mp3",
+         "mp3/replyVoice.mp3",
+         "mp3/yaaVoice.mp3",
+        */
     ];
 
     document.getElementById('connect').addEventListener('click', function() {
@@ -65,7 +75,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             case 'M': // 'A'が先頭にある場合、MP3を再生
                 if (data === "1") {
                     // document.getElementById('audioPlayer').play().catch(error => console.error('Playback failed', error));
-                    playRandomMp3();
+                    // playRandomMp3();//ランダムに再生
+                    playSequentialMp3();//順番に再生
                 } else if (data === "0") {
                     document.getElementById('audioPlayer').pause();
                     document.getElementById('audioPlayer').currentTime = 0;
@@ -84,6 +95,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const audioPlayer = document.getElementById('audioPlayer');
         audioPlayer.src = mp3Files[randomIndex];
         audioPlayer.play().catch(error => console.error('Playback failed', error));
+    }
+    function playSequentialMp3() {
+        if (currentMp3Index >= mp3Files.length) {
+            currentMp3Index = 0;
+        }
+        const audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.src = mp3Files[currentMp3Index];
+        audioPlayer.play().catch(error => console.error('Playback failed', error));
+        currentMp3Index++;
     }
     function updateBatteryLevel(level) {
         document.getElementById('batteryLevel').textContent = `${level}%`;
