@@ -1,55 +1,56 @@
 #include <Arduino.h>
 #include <Adafruit_TinyUSB.h>
-
 #include "BLEHelper.h"
 #include "Filters.h"
-#include "acc_rms_i2c.hpp"
 
-// #include "SparkFunLSM6DSO.h"
+#include "SparkFunLSM6DSO.h"
 #include "Wire.h"
 
 BleHelper ble;
 Filters filter;
-Acc acc;
-
-// LSM6DSO myIMU; //Default constructor is I2C, addr 0x6B
+LSM6DSO myIMU; //Default constructor is I2C, addr 0x6B
 
 float prev_rms = 0;
 unsigned long previousMillis = 0;
 bool isButton = false;
 float prev_acc_data[3] = {0};
 
+//プロトタイプ宣言
 bool checkButtonRelease(const int pin);
 void accInit();
 float accDiff();
 float getBatteryVoltage();
 float batteryPercentage(float voltage);
+void scanI2CDevices();
+
 
 void setup()
 {
   Serial.begin(115200);
   ble.init();
- 
-
-  Wire.begin();
+  
   analogReadResolution(10);
   pinMode(PIN_AIN5, INPUT);
 
   // pinMode(PIN_WIRE_SCL, INPUT_PULLUP);
   // pinMode(PIN_WIRE_SDA, INPUT_PULLUP);
 
-  // accInit(); //fixme ] sparkfun用の加速度センサ
+  Wire.begin();
 
-  // delay(5000);
-  // if( myIMU.begin(0x6B) )
-  //   Serial.println("Ready.");
-  // else { 
-  //   Serial.println("Could not connect to IMU.");
-  //   Serial.println("Freezing");
-  // }
+  //スキャンの開始
+  scanI2CDevices();
 
-  // if( myIMU.initialize(BASIC_SETTINGS) )
-  //   Serial.println("Loaded Settings.");
+  //LSM6DSOのセットアップ
+  delay(1000);
+  if( myIMU.begin(0x6B))//0x6B default, 0x6A(sa0 is gnd)
+    Serial.println("Ready.");
+  else { 
+    Serial.println("Could not connect to IMU.");
+    Serial.println("Freezing");
+  }
+
+  if( myIMU.initialize(BASIC_SETTINGS) )
+    Serial.println("Loaded Settings.");
 
 }
 
@@ -57,20 +58,20 @@ unsigned long timeVoltageCheck = millis();
 
 void loop()
 {
-  //一秒に一回電圧値を投げる
+  //電圧値の更新
   if(millis() - timeVoltageCheck > 1000){
     float vol = getBatteryVoltage();
     float per = batteryPercentage(vol);
     Serial.println(per);
 
     char checkType[2] = "B";
-    // char percentage [2] = "%";
     char myChar[20];
     sprintf(myChar, "%s %2.2f", checkType,per); 
     ble.write(myChar);
     timeVoltageCheck = millis();
   }
 
+  //LSM6DSOの出力確認
   /*
   Serial.print("\nAccelerometer:\n");
   Serial.print(" X = ");
@@ -92,7 +93,7 @@ void loop()
   Serial.print(" Degrees F = ");
   Serial.println(myIMU.readTempF(), 3);
   */
-  
+
   float rms = accDiff();
   if(rms>=1.0){
     unsigned long currentMillis = millis();
@@ -103,9 +104,39 @@ void loop()
       Serial.println("send signal for play mp3");
     }
   }
+
+ delay(500);
+}
+
+void scanI2CDevices() {
+  Serial.println("Scanning for I2C devices...");
+  byte count = 0;
+
+  while (count == 0) {
+    for (byte i = 1; i < 127; i++) {
+      Wire.beginTransmission(i);
+      if (Wire.endTransmission() == 0) {
+        Serial.print("I2C device found at address 0x");
+        if (i < 16) Serial.print("0");
+        Serial.print(i, HEX);
+        Serial.println(" !");
+        count++;
+      }
+    }
+
+    if (count == 0) {
+      Serial.println("No I2C devices found. Retry");
+      delay(1000);
+    } else {
+      Serial.print("Found ");
+      Serial.print(count, DEC);
+      Serial.println(" device(s).");
+    }
+  }
 }
 
 
+/*
 void accInit(){
   acc.setup();                           // IMUのセットアップ
   acc.getIMU();                          // IMUからデータを取得
@@ -116,7 +147,9 @@ void accInit(){
   }
   prev_rms = sqrt((pow(imu_data[0], 2) + pow(imu_data[1], 2) + pow(imu_data[2], 2))/3);
 }
+*/
 
+/*
 float accDiff(){
   acc.getIMU(); 
   float *imu_data = acc.getData();
@@ -135,6 +168,7 @@ float accDiff(){
   // Serial.println(rms);
   return rms;
 }
+*/
 
 // VBAT
 float getBatteryVoltage()
