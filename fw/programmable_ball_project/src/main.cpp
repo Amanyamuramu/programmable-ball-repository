@@ -94,6 +94,7 @@ void loop()
   Serial.println(myIMU.readTempF(), 3);
   */
 
+ /*
   float rms = accDiff();
   if(rms>=1.0){
     unsigned long currentMillis = millis();
@@ -104,6 +105,7 @@ void loop()
       Serial.println("send signal for play mp3");
     }
   }
+  */
 
  delay(500);
 }
