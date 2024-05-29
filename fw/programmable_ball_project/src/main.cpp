@@ -61,7 +61,7 @@ void loop()
       ble.write("0");
       ble.write("1");
       previousMillis = millis();
-      Serial.println("send signal for play mp3");
+      Serial.println("collision is detected, send signal for play mp3");
     }
   }
 
