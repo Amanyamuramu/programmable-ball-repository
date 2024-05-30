@@ -53,7 +53,7 @@ void loop()
   Serial.println(myIMU.readFloatAccelY(), 3);
   Serial.println(myIMU.readFloatAccelZ(), 3);
   */
-  delay(500);
+  delay(50);
 
   float rms = accDiff();
   if(rms>=1.0){
