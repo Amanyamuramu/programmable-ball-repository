@@ -53,7 +53,6 @@ void loop()
   Serial.println(myIMU.readFloatAccelY(), 3);
   Serial.println(myIMU.readFloatAccelZ(), 3);
   */
-  delay(50);
 
   float rms = accDiff();
   if(rms>=1.0){
@@ -65,14 +64,14 @@ void loop()
       sprintf(myChar, "%s %s", checkType,zero); 
       ble.write(myChar);
       // ble.write("0");
-      Serial.println(String(myChar));
+      // Serial.println(String(myChar));
       char one[2] = "1";
       sprintf(myChar, "%s %s", checkType,one);
       ble.write(myChar);
-      Serial.println(String(myChar));
+      // Serial.println(String(myChar));
       // ble.write("1");
       previousMillis = millis();
-      Serial.println("collision is detected, send signal for play mp3");
+      // Serial.println("collision is detected, send signal for play mp3");
     }
   }
 
