@@ -58,10 +58,20 @@ void loop()
   if(rms>=1.0){
     unsigned long currentMillis = millis();
     if(currentMillis - previousMillis >= 150){
-      ble.write("0");
-      ble.write("1");
+      char checkType[2] = "M";
+      char zero[2] = "0";
+      char myChar[5];
+      sprintf(myChar, "%s %s", checkType,zero); 
+      ble.write(myChar);
+      // ble.write("0");
+      // Serial.println(String(myChar));
+      char one[2] = "1";
+      sprintf(myChar, "%s %s", checkType,one);
+      ble.write(myChar);
+      // Serial.println(String(myChar));
+      // ble.write("1");
       previousMillis = millis();
-      Serial.println("collision is detected, send signal for play mp3");
+      // Serial.println("collision is detected, send signal for play mp3");
     }
   }
 
@@ -69,8 +79,7 @@ void loop()
   if(millis() - timeVoltageCheck > 1000){
     float vol = getBatteryVoltage();
     float per = batteryPercentage(vol);
-    Serial.println(per);
-
+    //値の送信
     char checkType[2] = "B";
     char myChar[20];
     sprintf(myChar, "%s %2.2f", checkType,per); 
