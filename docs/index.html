@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>BLE Device Control</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <button id="connect">接続</button>
     <div id="inputGroup">
-        <input type="text" id="inputText" placeholder="送信するテキストを入力">
-        <button id="send">送信</button>
+      <input type="text" id="inputText" placeholder="送信するテキストを入力" />
+      <button id="send">送信</button>
     </div>
     <div id="receivedData">Received data will be shown here</div>
     <!-- <p>Battery Level: <span id="batteryLevel">62.10%</span></p> -->
-
     <div class="battery">
-        <div class="battery-level" id="batteryLevel" style="width: 0%;">61.29%</div>
-    </div>    
-    
+      <div class="battery-level" id="batteryLevel" style="width: 0%">
+        61.29%
+      </div>
+    </div>
     <audio id="audioPlayer" src="mp3/painVoice.mp3" type="audio/mp3"></audio>
     <script src="ble.js"></script>
-</body>
+  </body>
 </html>
