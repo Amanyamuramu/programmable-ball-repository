@@ -3,6 +3,7 @@ fw/sandbox/VibrationCheck/
 pcb/Programmable-ball_lib
 pcb/ref
 pcb/programmable-ball_main/dxf
+docs/mp3/pekora
 
 # Ignore list for Eagle, a PCB layout tool
 
@@ -22,3 +23,6 @@ pcb/programmable-ball_main/dxf
 
 # Ignore ideaMaker working file
 *.idea
+
+# Unity
+unity
