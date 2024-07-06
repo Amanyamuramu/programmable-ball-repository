@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     playRandomMp3();//ランダムに再生
                     // playSequentialMp3();//順番に再生
                 } else if (data === " 0") {
-                    document.getElementById('audioPlayer').pause();
+                    // document.getElementById('audioPlayer').pause();
                     document.getElementById('audioPlayer').currentTime = 0;
                 }
                 break;
