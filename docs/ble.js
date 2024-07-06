@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const mp3Files = [
         "mp3/sfc_art/bereal.mp3",
         "mp3/sfc_art/discord_01.mp3",
-        "mp3/sfc_art/discord_02.mp3",
+        "mp3/sfc_art/twitter.mp3",
         "mp3/sfc_art/line.mp3",
         "mp3/sfc_art/slack.mp3",
 
