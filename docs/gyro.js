@@ -10,7 +10,7 @@ let gyroY = 0;
 let gyroZ = 0;
 
 function setup() {
-    createCanvas(300, 300, WEBGL);
+    createCanvas(10, 10, WEBGL);
 }
 
 function draw() {
