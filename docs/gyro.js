@@ -5,6 +5,9 @@ let axisLength = 100;
 let axisThickness = 4;
 let gridSize = 100;
 let gridSpacing = 200;
+let gyroX = 0;
+let gyroY = 0;
+let gyroZ = 0;
 
 function setup() {
     createCanvas(300, 300, WEBGL);
@@ -13,11 +16,14 @@ function setup() {
 function draw() {
     background(200);
 
-    angleX += 0.01;
-    angleY += 0.01;
-    angleZ += 0.01;
+    gyroX += 0.01;
+    gyroY += 0.01;
+    gyroZ += 0.01;
+    // gyroX += angleX * 0.0;
+    // gyroY += angleY * 0.00001;
+    // gyroZ += angleZ * 0.0;
 
-    rotateScene(angleX, angleY, angleZ);
+    rotateScene(gyroX, gyroY, gyroZ);
 
     drawGrid(gridSize, gridSpacing);
     drawAxis(255, 0, 0, axisLength, 0, 0, 0, HALF_PI + PI); // X軸
