@@ -38,6 +38,7 @@ body {
     border-radius: 4px; /* 角の丸みを設定 */
     background-color: #fff; /* バッテリーの背景色を設定 */
     box-shadow: 0 0 5px rgba(0,0,0,0.2); /* 影を追加 */
+    margin-bottom: 30px;
 }
 
 .battery::after {
