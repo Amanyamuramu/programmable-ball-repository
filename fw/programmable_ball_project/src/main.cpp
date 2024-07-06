@@ -2,7 +2,6 @@
 #include <Adafruit_TinyUSB.h>
 #include "BLEHelper.h"
 #include "Filters.h"
-
 #include "SparkFunLSM6DSO.h"
 #include "Wire.h"
 
@@ -13,8 +12,8 @@ LSM6DSO myIMU; //Default constructor is I2C, addr 0x6B
 float prev_rms = 0;
 unsigned long previousMillis = 0;
 float prev_acc_data[3] = {0};
-
 unsigned long timeVoltageCheck = millis();
+const float RMS_THRESHOLD = 1.5;
 
 //プロトタイプ宣言
 bool checkButtonRelease(const int pin);
@@ -22,7 +21,6 @@ void accInit();
 float accDiff();
 float getBatteryVoltage();
 float batteryPercentage(float voltage);
-void scanI2CDevices();
 
 void setup()
 {
@@ -30,20 +28,13 @@ void setup()
   ble.init();
   analogReadResolution(10);
   pinMode(PIN_AIN5, INPUT);
-  // pinMode(PIN_WIRE_SCL, INPUT_PULLUP);
-  // pinMode(PIN_WIRE_SDA, INPUT_PULLUP);
+  /*
+  pinMode(PIN_WIRE_SCL, INPUT_PULLUP);
+  pinMode(PIN_WIRE_SDA, INPUT_PULLUP);
+  */
   Wire.begin();
-  //scanI2CDevices();
-  delay(1000);
-  //LSM6DSOのセットアップ
-  if( myIMU.begin(0x6B))//0x6B default, 0x6A(sa0 is gnd)
-    Serial.println("Ready.");
-  else { 
-    Serial.println("Could not connect to IMU.");
-    Serial.println("Freezing");
-  }
-  if( myIMU.initialize(BASIC_SETTINGS) )
-    Serial.println("Loaded Settings.");
+  delay(500);
+  accInit();
 }
 
 void loop()
@@ -53,25 +44,22 @@ void loop()
   Serial.println(myIMU.readFloatAccelY(), 3);
   Serial.println(myIMU.readFloatAccelZ(), 3);
   */
-
   float rms = accDiff();
-  if(rms>=1.0){
+  //fixme:rmsの閾値の調整（衝突の大きさの分類）
+  if(rms>=RMS_THRESHOLD){
     unsigned long currentMillis = millis();
-    if(currentMillis - previousMillis >= 150){
+    if(currentMillis - previousMillis >= 150){//チャタリング防止
       char checkType[2] = "M";
+
       char zero[2] = "0";
       char myChar[5];
       sprintf(myChar, "%s %s", checkType,zero); 
       ble.write(myChar);
-      // ble.write("0");
-      // Serial.println(String(myChar));
+
       char one[2] = "1";
       sprintf(myChar, "%s %s", checkType,one);
       ble.write(myChar);
-      // Serial.println(String(myChar));
-      // ble.write("1");
       previousMillis = millis();
-      // Serial.println("collision is detected, send signal for play mp3");
     }
   }
 
@@ -88,10 +76,26 @@ void loop()
 
     Serial.print("RMS: ");
     Serial.println(rms, 3); // RMSの値を表示
+
+    char texAcc[20];
+    float accX = myIMU.readFloatAccelX();
+    float accY = myIMU.readFloatAccelY();
+    float accZ = myIMU.readFloatAccelZ();
+    sprintf(texAcc, "A %2.2f %2.2f %2.2f", accX, accY, accZ);
+    ble.write(texAcc);
   }
 }
 
 void accInit(){
+  //LSM6DSOのセットアップ
+  if( myIMU.begin(0x6B))//0x6B default, 0x6A(sa0 is gnd)
+    Serial.println("Ready.");
+  else { 
+    Serial.println("Could not connect to IMU.");
+  }
+  if( myIMU.initialize(BASIC_SETTINGS) ){
+    Serial.println("Loaded Settings.");
+  }
   float imu_data[3] = {myIMU.readFloatAccelX(), myIMU.readFloatAccelY(), myIMU.readFloatAccelZ()};
   for(uint8_t i = 0; i < 3; i++){
     prev_acc_data[i] = imu_data[i];
@@ -106,13 +110,11 @@ float accDiff(){
   float imu_data[3] = {myIMU.readFloatAccelX(), myIMU.readFloatAccelY(), myIMU.readFloatAccelZ()};
   float lpf[3] = {0};
   float hpf[3] = {0};
-
   for (uint8_t i = 0; i < 3; i++){
     lpf[i] = filter.applyLowPassFilter(imu_data[i], prev_acc_data[i]);
     prev_acc_data[i] = imu_data[i];
     hpf[i] = filter.applyHighPassFilter(imu_data[i], lpf[i]);
   }
-
   float rms = sqrt((pow(hpf[0], 2) + pow(hpf[1], 2) + pow(hpf[2], 2)) / 3);
   return rms;
 }

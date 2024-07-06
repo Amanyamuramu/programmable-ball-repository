@@ -1,6 +1,6 @@
 #include "BLEHelper.h"
 
-const char OWN_DEVICE_MODEL[] = "A-PB-P01";
+const char OWN_DEVICE_MODEL[] = "A-PB-P02";
 
 // OTA DFU service
 // BLEDfu bledfu;
