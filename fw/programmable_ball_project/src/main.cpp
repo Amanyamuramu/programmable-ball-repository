@@ -13,7 +13,7 @@ float prev_rms = 0;
 unsigned long previousMillis = 0;
 float prev_acc_data[3] = {0};
 unsigned long timeVoltageCheck = millis();
-const float RMS_THRESHOLD = 1.5;
+const float RMS_THRESHOLD = 3;//3は衝撃（1.5は机に置くなど）
 
 //プロトタイプ宣言
 bool checkButtonRelease(const int pin);
@@ -47,6 +47,8 @@ void loop()
   float rms = accDiff();
   //fixme:rmsの閾値の調整（衝突の大きさの分類）
   if(rms>=RMS_THRESHOLD){
+    Serial.print("RMS: ");
+    Serial.println(rms, 3); // RMSの値を表示
     unsigned long currentMillis = millis();
     if(currentMillis - previousMillis >= 150){//チャタリング防止
       char checkType[2] = "M";
@@ -74,8 +76,8 @@ void loop()
     ble.write(myChar);
     timeVoltageCheck = millis();
 
-    Serial.print("RMS: ");
-    Serial.println(rms, 3); // RMSの値を表示
+    // Serial.print("RMS: ");
+    // Serial.println(rms, 3); // RMSの値を表示
 
     char texAcc[20];
     float accX = myIMU.readFloatAccelX();
